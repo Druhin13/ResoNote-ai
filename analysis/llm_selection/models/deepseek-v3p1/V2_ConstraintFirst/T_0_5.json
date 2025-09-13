@@ -1,0 +1,19 @@
+{
+  "model": "deepseek-v3p1",
+  "variant": "V2_ConstraintFirst",
+  "temperature": 0.5,
+  "metrics": {
+    "json_validity_rate": 1.0,
+    "oov_rate": 0.0,
+    "cardinality_errors": 0,
+    "latency_p50_s": 8.954,
+    "latency_p95_s": 16.309,
+    "total_tags": 325,
+    "none_counts": {
+      "Emotional_Tone": 8,
+      "Thematic_Content": 13,
+      "Narrative_Structure": 9,
+      "Lyrical_Style": 10
+    }
+  }
+}

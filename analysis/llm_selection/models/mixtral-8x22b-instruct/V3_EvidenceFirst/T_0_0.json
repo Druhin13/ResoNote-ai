@@ -1,0 +1,19 @@
+{
+  "model": "mixtral-8x22b-instruct",
+  "variant": "V3_EvidenceFirst",
+  "temperature": 0.0,
+  "metrics": {
+    "json_validity_rate": 1.0,
+    "oov_rate": 0.0,
+    "cardinality_errors": 0,
+    "latency_p50_s": 15.011,
+    "latency_p95_s": 17.141,
+    "total_tags": 213,
+    "none_counts": {
+      "Emotional_Tone": 17,
+      "Thematic_Content": 13,
+      "Narrative_Structure": 22,
+      "Lyrical_Style": 14
+    }
+  }
+}

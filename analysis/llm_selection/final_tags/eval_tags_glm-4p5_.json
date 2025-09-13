@@ -1,0 +1,292 @@
+[
+  {
+    "track_id": "4rsWZTMcBNbfXr6OIeaEs5",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Triumph",
+          "score": 0.8
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Success",
+          "score": 0.9
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "First_Person",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "0DYRjWiFJHvLjxRrywtltC",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Sadness",
+          "score": 0.8
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Love",
+          "score": 0.9
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "Narrative_Yes",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "0kByOo2zLSBXza53FvRRhh",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Sadness",
+          "score": 0.9
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Struggle",
+          "score": 0.8
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "First_Person",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.8
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "4y5PpwfOtG4uTAoybADKta",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "4BQQNiMgBcgtiGBLbWy15P",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "0bRgiiAzR0NXeWLieb27MJ",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Triumph",
+          "score": 0.8
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Success",
+          "score": 0.7
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "First_Person",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.6
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "3kosv2SiE01oo3QxTDJUtb",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Triumph",
+          "score": 0.7
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Heartbreak",
+          "score": 0.6
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "First_Person",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "3gUt3Hhi9nNDue5FL6Xl4Q",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Sadness",
+          "score": 0.7
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Struggle",
+          "score": 0.8
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "First_Person",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.8
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "4oh9w5Ir4OnmQoN9ikRlxF",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "Bittersweet",
+          "score": 0.7
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "Love",
+          "score": 0.8
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "First_Person",
+          "score": 0.9
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "track_id": "0HCreD0IsKHYhBm472StIH",
+    "tags": {
+      "Emotional_Tone": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Thematic_Content": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Narrative_Structure": [
+        {
+          "tag": "None",
+          "score": 1.0
+        }
+      ],
+      "Lyrical_Style": [
+        {
+          "tag": "Repetition",
+          "score": 0.9
+        }
+      ]
+    }
+  }
+]

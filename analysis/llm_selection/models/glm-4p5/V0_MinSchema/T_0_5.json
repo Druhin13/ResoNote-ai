@@ -1,0 +1,19 @@
+{
+  "model": "glm-4p5",
+  "variant": "V0_MinSchema",
+  "temperature": 0.5,
+  "metrics": {
+    "json_validity_rate": 1.0,
+    "oov_rate": 0.0,
+    "cardinality_errors": 0,
+    "latency_p50_s": 1.809,
+    "latency_p95_s": 16.323,
+    "total_tags": 78,
+    "none_counts": {
+      "Emotional_Tone": 7,
+      "Thematic_Content": 9,
+      "Narrative_Structure": 5,
+      "Lyrical_Style": 5
+    }
+  }
+}

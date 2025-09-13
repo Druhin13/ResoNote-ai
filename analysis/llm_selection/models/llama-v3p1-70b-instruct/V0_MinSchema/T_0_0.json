@@ -1,0 +1,19 @@
+{
+  "model": "llama-v3p1-70b-instruct",
+  "variant": "V0_MinSchema",
+  "temperature": 0.0,
+  "metrics": {
+    "json_validity_rate": 1.0,
+    "oov_rate": 0.0,
+    "cardinality_errors": 0,
+    "latency_p50_s": 6.051,
+    "latency_p95_s": 7.735,
+    "total_tags": 326,
+    "none_counts": {
+      "Emotional_Tone": 34,
+      "Thematic_Content": 39,
+      "Narrative_Structure": 42,
+      "Lyrical_Style": 39
+    }
+  }
+}

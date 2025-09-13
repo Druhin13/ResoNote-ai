@@ -1,0 +1,19 @@
+{
+  "model": "glm-4p5",
+  "variant": "V3_EvidenceFirst",
+  "temperature": 0.2,
+  "metrics": {
+    "json_validity_rate": 1.0,
+    "oov_rate": 0.0,
+    "cardinality_errors": 0,
+    "latency_p50_s": 1.34,
+    "latency_p95_s": 15.673,
+    "total_tags": 57,
+    "none_counts": {
+      "Emotional_Tone": 3,
+      "Thematic_Content": 3,
+      "Narrative_Structure": 1,
+      "Lyrical_Style": 5
+    }
+  }
+}

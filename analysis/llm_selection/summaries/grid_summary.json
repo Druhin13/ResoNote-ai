@@ -1,0 +1,1712 @@
+[
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 8.526,
+      "latency_p95_s": 12.47,
+      "total_tags": 338,
+      "none_counts": {
+        "Emotional_Tone": 17,
+        "Thematic_Content": 23,
+        "Narrative_Structure": 30,
+        "Lyrical_Style": 23
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 9.311,
+      "latency_p95_s": 10.591,
+      "total_tags": 353,
+      "none_counts": {
+        "Emotional_Tone": 21,
+        "Thematic_Content": 28,
+        "Narrative_Structure": 29,
+        "Lyrical_Style": 36
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.131,
+      "latency_p95_s": 6.559,
+      "total_tags": 352,
+      "none_counts": {
+        "Emotional_Tone": 22,
+        "Thematic_Content": 28,
+        "Narrative_Structure": 34,
+        "Lyrical_Style": 33
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.579,
+      "latency_p95_s": 8.076,
+      "total_tags": 354,
+      "none_counts": {
+        "Emotional_Tone": 18,
+        "Thematic_Content": 31,
+        "Narrative_Structure": 40,
+        "Lyrical_Style": 41
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 8.11,
+      "latency_p95_s": 8.778,
+      "total_tags": 360,
+      "none_counts": {
+        "Emotional_Tone": 23,
+        "Thematic_Content": 33,
+        "Narrative_Structure": 38,
+        "Lyrical_Style": 42
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.246,
+      "latency_p95_s": 6.812,
+      "total_tags": 376,
+      "none_counts": {
+        "Emotional_Tone": 21,
+        "Thematic_Content": 33,
+        "Narrative_Structure": 43,
+        "Lyrical_Style": 49
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 5.474,
+      "latency_p95_s": 7.376,
+      "total_tags": 258,
+      "none_counts": {
+        "Emotional_Tone": 12,
+        "Thematic_Content": 15,
+        "Narrative_Structure": 20,
+        "Lyrical_Style": 17
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.827,
+      "latency_p95_s": 4.906,
+      "total_tags": 244,
+      "none_counts": {
+        "Emotional_Tone": 13,
+        "Thematic_Content": 15,
+        "Narrative_Structure": 20,
+        "Lyrical_Style": 16
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.364,
+      "latency_p95_s": 5.373,
+      "total_tags": 255,
+      "none_counts": {
+        "Emotional_Tone": 11,
+        "Thematic_Content": 13,
+        "Narrative_Structure": 21,
+        "Lyrical_Style": 14
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.814,
+      "latency_p95_s": 14.398,
+      "total_tags": 343,
+      "none_counts": {
+        "Emotional_Tone": 30,
+        "Thematic_Content": 35,
+        "Narrative_Structure": 43,
+        "Lyrical_Style": 48
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.615,
+      "latency_p95_s": 8.206,
+      "total_tags": 335,
+      "none_counts": {
+        "Emotional_Tone": 26,
+        "Thematic_Content": 35,
+        "Narrative_Structure": 38,
+        "Lyrical_Style": 48
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.912,
+      "latency_p95_s": 5.984,
+      "total_tags": 312,
+      "none_counts": {
+        "Emotional_Tone": 28,
+        "Thematic_Content": 31,
+        "Narrative_Structure": 39,
+        "Lyrical_Style": 46
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.562,
+      "latency_p95_s": 8.745,
+      "total_tags": 329,
+      "none_counts": {
+        "Emotional_Tone": 22,
+        "Thematic_Content": 29,
+        "Narrative_Structure": 34,
+        "Lyrical_Style": 38
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.986,
+      "latency_p95_s": 5.571,
+      "total_tags": 341,
+      "none_counts": {
+        "Emotional_Tone": 21,
+        "Thematic_Content": 29,
+        "Narrative_Structure": 37,
+        "Lyrical_Style": 41
+      }
+    }
+  },
+  {
+    "model": "llama-v3p3-70b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.575,
+      "latency_p95_s": 5.537,
+      "total_tags": 348,
+      "none_counts": {
+        "Emotional_Tone": 23,
+        "Thematic_Content": 31,
+        "Narrative_Structure": 37,
+        "Lyrical_Style": 38
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.051,
+      "latency_p95_s": 7.735,
+      "total_tags": 326,
+      "none_counts": {
+        "Emotional_Tone": 34,
+        "Thematic_Content": 39,
+        "Narrative_Structure": 42,
+        "Lyrical_Style": 39
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 5.093,
+      "latency_p95_s": 6.244,
+      "total_tags": 341,
+      "none_counts": {
+        "Emotional_Tone": 29,
+        "Thematic_Content": 33,
+        "Narrative_Structure": 36,
+        "Lyrical_Style": 37
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.554,
+      "latency_p95_s": 5.411,
+      "total_tags": 285,
+      "none_counts": {
+        "Emotional_Tone": 20,
+        "Thematic_Content": 25,
+        "Narrative_Structure": 37,
+        "Lyrical_Style": 28
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.853,
+      "latency_p95_s": 6.35,
+      "total_tags": 300,
+      "none_counts": {
+        "Emotional_Tone": 20,
+        "Thematic_Content": 26,
+        "Narrative_Structure": 29,
+        "Lyrical_Style": 27
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 5.176,
+      "latency_p95_s": 7.743,
+      "total_tags": 326,
+      "none_counts": {
+        "Emotional_Tone": 22,
+        "Thematic_Content": 33,
+        "Narrative_Structure": 40,
+        "Lyrical_Style": 41
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.88,
+      "latency_p95_s": 6.023,
+      "total_tags": 300,
+      "none_counts": {
+        "Emotional_Tone": 25,
+        "Thematic_Content": 26,
+        "Narrative_Structure": 24,
+        "Lyrical_Style": 32
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.194,
+      "latency_p95_s": 5.023,
+      "total_tags": 227,
+      "none_counts": {
+        "Emotional_Tone": 28,
+        "Thematic_Content": 33,
+        "Narrative_Structure": 41,
+        "Lyrical_Style": 40
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.022,
+      "latency_p95_s": 4.86,
+      "total_tags": 224,
+      "none_counts": {
+        "Emotional_Tone": 26,
+        "Thematic_Content": 27,
+        "Narrative_Structure": 39,
+        "Lyrical_Style": 39
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 5.207,
+      "latency_p95_s": 6.78,
+      "total_tags": 312,
+      "none_counts": {
+        "Emotional_Tone": 25,
+        "Thematic_Content": 30,
+        "Narrative_Structure": 37,
+        "Lyrical_Style": 38
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.682,
+      "latency_p95_s": 6.125,
+      "total_tags": 295,
+      "none_counts": {
+        "Emotional_Tone": 38,
+        "Thematic_Content": 44,
+        "Narrative_Structure": 44,
+        "Lyrical_Style": 42
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.471,
+      "latency_p95_s": 6.493,
+      "total_tags": 264,
+      "none_counts": {
+        "Emotional_Tone": 37,
+        "Thematic_Content": 42,
+        "Narrative_Structure": 41,
+        "Lyrical_Style": 45
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.447,
+      "latency_p95_s": 5.488,
+      "total_tags": 266,
+      "none_counts": {
+        "Emotional_Tone": 23,
+        "Thematic_Content": 27,
+        "Narrative_Structure": 37,
+        "Lyrical_Style": 40
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 5.338,
+      "latency_p95_s": 6.219,
+      "total_tags": 333,
+      "none_counts": {
+        "Emotional_Tone": 29,
+        "Thematic_Content": 37,
+        "Narrative_Structure": 39,
+        "Lyrical_Style": 43
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 5.262,
+      "latency_p95_s": 6.422,
+      "total_tags": 327,
+      "none_counts": {
+        "Emotional_Tone": 18,
+        "Thematic_Content": 25,
+        "Narrative_Structure": 30,
+        "Lyrical_Style": 29
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.959,
+      "latency_p95_s": 5.99,
+      "total_tags": 308,
+      "none_counts": {
+        "Emotional_Tone": 23,
+        "Thematic_Content": 30,
+        "Narrative_Structure": 37,
+        "Lyrical_Style": 37
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 17.758,
+      "latency_p95_s": 23.204,
+      "total_tags": 269,
+      "none_counts": {
+        "Emotional_Tone": 12,
+        "Thematic_Content": 20,
+        "Narrative_Structure": 15,
+        "Lyrical_Style": 15
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 14.665,
+      "latency_p95_s": 22.484,
+      "total_tags": 266,
+      "none_counts": {
+        "Emotional_Tone": 12,
+        "Thematic_Content": 18,
+        "Narrative_Structure": 23,
+        "Lyrical_Style": 18
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 16.352,
+      "latency_p95_s": 23.268,
+      "total_tags": 254,
+      "none_counts": {
+        "Emotional_Tone": 12,
+        "Thematic_Content": 16,
+        "Narrative_Structure": 14,
+        "Lyrical_Style": 16
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 13.026,
+      "latency_p95_s": 19.179,
+      "total_tags": 243,
+      "none_counts": {
+        "Emotional_Tone": 9,
+        "Thematic_Content": 11,
+        "Narrative_Structure": 6,
+        "Lyrical_Style": 9
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 13.412,
+      "latency_p95_s": 16.168,
+      "total_tags": 242,
+      "none_counts": {
+        "Emotional_Tone": 7,
+        "Thematic_Content": 12,
+        "Narrative_Structure": 6,
+        "Lyrical_Style": 14
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.355,
+      "latency_p95_s": 13.657,
+      "total_tags": 240,
+      "none_counts": {
+        "Emotional_Tone": 12,
+        "Thematic_Content": 14,
+        "Narrative_Structure": 4,
+        "Lyrical_Style": 12
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 13.532,
+      "latency_p95_s": 16.145,
+      "total_tags": 230,
+      "none_counts": {
+        "Emotional_Tone": 8,
+        "Thematic_Content": 12,
+        "Narrative_Structure": 10,
+        "Lyrical_Style": 10
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.67,
+      "latency_p95_s": 16.634,
+      "total_tags": 242,
+      "none_counts": {
+        "Emotional_Tone": 8,
+        "Thematic_Content": 11,
+        "Narrative_Structure": 5,
+        "Lyrical_Style": 13
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.212,
+      "latency_p95_s": 13.439,
+      "total_tags": 212,
+      "none_counts": {
+        "Emotional_Tone": 10,
+        "Thematic_Content": 7,
+        "Narrative_Structure": 8,
+        "Lyrical_Style": 7
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 15.011,
+      "latency_p95_s": 17.141,
+      "total_tags": 213,
+      "none_counts": {
+        "Emotional_Tone": 17,
+        "Thematic_Content": 13,
+        "Narrative_Structure": 22,
+        "Lyrical_Style": 14
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.268,
+      "latency_p95_s": 11.418,
+      "total_tags": 212,
+      "none_counts": {
+        "Emotional_Tone": 20,
+        "Thematic_Content": 13,
+        "Narrative_Structure": 18,
+        "Lyrical_Style": 14
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 12.927,
+      "latency_p95_s": 16.592,
+      "total_tags": 210,
+      "none_counts": {
+        "Emotional_Tone": 18,
+        "Thematic_Content": 11,
+        "Narrative_Structure": 24,
+        "Lyrical_Style": 12
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 13.371,
+      "latency_p95_s": 16.881,
+      "total_tags": 256,
+      "none_counts": {
+        "Emotional_Tone": 12,
+        "Thematic_Content": 20,
+        "Narrative_Structure": 15,
+        "Lyrical_Style": 19
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.121,
+      "latency_p95_s": 13.371,
+      "total_tags": 262,
+      "none_counts": {
+        "Emotional_Tone": 8,
+        "Thematic_Content": 17,
+        "Narrative_Structure": 13,
+        "Lyrical_Style": 18
+      }
+    }
+  },
+  {
+    "model": "mixtral-8x22b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 14.816,
+      "latency_p95_s": 22.231,
+      "total_tags": 252,
+      "none_counts": {
+        "Emotional_Tone": 11,
+        "Thematic_Content": 23,
+        "Narrative_Structure": 9,
+        "Lyrical_Style": 15
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.479,
+      "latency_p95_s": 6.292,
+      "total_tags": 425,
+      "none_counts": {
+        "Emotional_Tone": 35,
+        "Thematic_Content": 40,
+        "Narrative_Structure": 36,
+        "Lyrical_Style": 38
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.001,
+      "latency_p95_s": 5.468,
+      "total_tags": 424,
+      "none_counts": {
+        "Emotional_Tone": 31,
+        "Thematic_Content": 36,
+        "Narrative_Structure": 39,
+        "Lyrical_Style": 34
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V0_MinSchema",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.837,
+      "latency_p95_s": 7.748,
+      "total_tags": 392,
+      "none_counts": {
+        "Emotional_Tone": 38,
+        "Thematic_Content": 38,
+        "Narrative_Structure": 40,
+        "Lyrical_Style": 36
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.079,
+      "latency_p95_s": 4.708,
+      "total_tags": 453,
+      "none_counts": {
+        "Emotional_Tone": 33,
+        "Thematic_Content": 36,
+        "Narrative_Structure": 35,
+        "Lyrical_Style": 34
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.844,
+      "latency_p95_s": 4.899,
+      "total_tags": 402,
+      "none_counts": {
+        "Emotional_Tone": 28,
+        "Thematic_Content": 35,
+        "Narrative_Structure": 35,
+        "Lyrical_Style": 31
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V1_Baseline",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.95,
+      "latency_p95_s": 5.078,
+      "total_tags": 405,
+      "none_counts": {
+        "Emotional_Tone": 25,
+        "Thematic_Content": 30,
+        "Narrative_Structure": 39,
+        "Lyrical_Style": 33
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.981,
+      "latency_p95_s": 4.669,
+      "total_tags": 420,
+      "none_counts": {
+        "Emotional_Tone": 32,
+        "Thematic_Content": 36,
+        "Narrative_Structure": 35,
+        "Lyrical_Style": 36
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.859,
+      "latency_p95_s": 5.172,
+      "total_tags": 418,
+      "none_counts": {
+        "Emotional_Tone": 35,
+        "Thematic_Content": 33,
+        "Narrative_Structure": 36,
+        "Lyrical_Style": 35
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 0.9,
+      "oov_rate": 0.0,
+      "cardinality_errors": 1,
+      "latency_p50_s": 4.013,
+      "latency_p95_s": 8.863,
+      "total_tags": 437,
+      "none_counts": {
+        "Emotional_Tone": 33,
+        "Thematic_Content": 34,
+        "Narrative_Structure": 35,
+        "Lyrical_Style": 35
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.518,
+      "latency_p95_s": 4.449,
+      "total_tags": 393,
+      "none_counts": {
+        "Emotional_Tone": 39,
+        "Thematic_Content": 40,
+        "Narrative_Structure": 41,
+        "Lyrical_Style": 40
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.623,
+      "latency_p95_s": 4.274,
+      "total_tags": 377,
+      "none_counts": {
+        "Emotional_Tone": 38,
+        "Thematic_Content": 40,
+        "Narrative_Structure": 40,
+        "Lyrical_Style": 41
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.612,
+      "latency_p95_s": 4.87,
+      "total_tags": 398,
+      "none_counts": {
+        "Emotional_Tone": 51,
+        "Thematic_Content": 49,
+        "Narrative_Structure": 49,
+        "Lyrical_Style": 49
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.961,
+      "latency_p95_s": 5.257,
+      "total_tags": 419,
+      "none_counts": {
+        "Emotional_Tone": 26,
+        "Thematic_Content": 29,
+        "Narrative_Structure": 29,
+        "Lyrical_Style": 31
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.213,
+      "latency_p95_s": 5.077,
+      "total_tags": 416,
+      "none_counts": {
+        "Emotional_Tone": 22,
+        "Thematic_Content": 26,
+        "Narrative_Structure": 29,
+        "Lyrical_Style": 30
+      }
+    }
+  },
+  {
+    "model": "llama-v3p1-8b-instruct",
+    "variant": "V4_RobustNone",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 3.864,
+      "latency_p95_s": 5.657,
+      "total_tags": 411,
+      "none_counts": {
+        "Emotional_Tone": 33,
+        "Thematic_Content": 34,
+        "Narrative_Structure": 35,
+        "Lyrical_Style": 27
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V0_MinSchema",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 7.229,
+      "latency_p95_s": 17.377,
+      "total_tags": 136,
+      "none_counts": {
+        "Emotional_Tone": 8,
+        "Thematic_Content": 11,
+        "Narrative_Structure": 6,
+        "Lyrical_Style": 7
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V0_MinSchema",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 4.327,
+      "latency_p95_s": 15.301,
+      "total_tags": 113,
+      "none_counts": {
+        "Emotional_Tone": 4,
+        "Thematic_Content": 9,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 6
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V0_MinSchema",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 1.809,
+      "latency_p95_s": 16.323,
+      "total_tags": 78,
+      "none_counts": {
+        "Emotional_Tone": 7,
+        "Thematic_Content": 9,
+        "Narrative_Structure": 5,
+        "Lyrical_Style": 5
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V1_Baseline",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.596,
+      "latency_p95_s": 14.796,
+      "total_tags": 127,
+      "none_counts": {
+        "Emotional_Tone": 9,
+        "Thematic_Content": 10,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 7
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V1_Baseline",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 2.385,
+      "latency_p95_s": 15.98,
+      "total_tags": 103,
+      "none_counts": {
+        "Emotional_Tone": 3,
+        "Thematic_Content": 8,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 6
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V1_Baseline",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 6.335,
+      "latency_p95_s": 17.589,
+      "total_tags": 152,
+      "none_counts": {
+        "Emotional_Tone": 9,
+        "Thematic_Content": 11,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 6
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 2.822,
+      "latency_p95_s": 17.238,
+      "total_tags": 115,
+      "none_counts": {
+        "Emotional_Tone": 6,
+        "Thematic_Content": 10,
+        "Narrative_Structure": 5,
+        "Lyrical_Style": 10
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 1.006,
+      "latency_p95_s": 17.372,
+      "total_tags": 73,
+      "none_counts": {
+        "Emotional_Tone": 2,
+        "Thematic_Content": 5,
+        "Narrative_Structure": 3,
+        "Lyrical_Style": 3
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 2.036,
+      "latency_p95_s": 18.252,
+      "total_tags": 118,
+      "none_counts": {
+        "Emotional_Tone": 5,
+        "Thematic_Content": 7,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 7
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 1.895,
+      "latency_p95_s": 2.929,
+      "total_tags": 0,
+      "none_counts": {
+        "Emotional_Tone": 0,
+        "Thematic_Content": 0,
+        "Narrative_Structure": 0,
+        "Lyrical_Style": 0
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 1.34,
+      "latency_p95_s": 15.673,
+      "total_tags": 57,
+      "none_counts": {
+        "Emotional_Tone": 3,
+        "Thematic_Content": 3,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 5
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 1.061,
+      "latency_p95_s": 10.477,
+      "total_tags": 30,
+      "none_counts": {
+        "Emotional_Tone": 3,
+        "Thematic_Content": 2,
+        "Narrative_Structure": 0,
+        "Lyrical_Style": 4
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V4_RobustNone",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 7.707,
+      "latency_p95_s": 17.864,
+      "total_tags": 101,
+      "none_counts": {
+        "Emotional_Tone": 10,
+        "Thematic_Content": 7,
+        "Narrative_Structure": 3,
+        "Lyrical_Style": 3
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V4_RobustNone",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 1.159,
+      "latency_p95_s": 10.106,
+      "total_tags": 20,
+      "none_counts": {
+        "Emotional_Tone": 1,
+        "Thematic_Content": 1,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 2
+      }
+    }
+  },
+  {
+    "model": "glm-4p5",
+    "variant": "V4_RobustNone",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 2.386,
+      "latency_p95_s": 19.497,
+      "total_tags": 41,
+      "none_counts": {
+        "Emotional_Tone": 5,
+        "Thematic_Content": 5,
+        "Narrative_Structure": 5,
+        "Lyrical_Style": 5
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V0_MinSchema",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 9.756,
+      "latency_p95_s": 20.708,
+      "total_tags": 338,
+      "none_counts": {
+        "Emotional_Tone": 4,
+        "Thematic_Content": 13,
+        "Narrative_Structure": 3,
+        "Lyrical_Style": 5
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V0_MinSchema",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 17.3,
+      "latency_p95_s": 20.319,
+      "total_tags": 355,
+      "none_counts": {
+        "Emotional_Tone": 3,
+        "Thematic_Content": 10,
+        "Narrative_Structure": 6,
+        "Lyrical_Style": 3
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V0_MinSchema",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.095,
+      "latency_p95_s": 15.397,
+      "total_tags": 324,
+      "none_counts": {
+        "Emotional_Tone": 5,
+        "Thematic_Content": 10,
+        "Narrative_Structure": 6,
+        "Lyrical_Style": 4
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V1_Baseline",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.389,
+      "latency_p95_s": 15.045,
+      "total_tags": 335,
+      "none_counts": {
+        "Emotional_Tone": 9,
+        "Thematic_Content": 15,
+        "Narrative_Structure": 9,
+        "Lyrical_Style": 5
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V1_Baseline",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.776,
+      "latency_p95_s": 15.703,
+      "total_tags": 333,
+      "none_counts": {
+        "Emotional_Tone": 3,
+        "Thematic_Content": 8,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 7
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V1_Baseline",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 13.331,
+      "latency_p95_s": 16.688,
+      "total_tags": 329,
+      "none_counts": {
+        "Emotional_Tone": 4,
+        "Thematic_Content": 14,
+        "Narrative_Structure": 4,
+        "Lyrical_Style": 2
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.558,
+      "latency_p95_s": 13.778,
+      "total_tags": 348,
+      "none_counts": {
+        "Emotional_Tone": 1,
+        "Thematic_Content": 7,
+        "Narrative_Structure": 1,
+        "Lyrical_Style": 5
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.908,
+      "latency_p95_s": 16.337,
+      "total_tags": 330,
+      "none_counts": {
+        "Emotional_Tone": 4,
+        "Thematic_Content": 11,
+        "Narrative_Structure": 4,
+        "Lyrical_Style": 3
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V2_ConstraintFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 8.954,
+      "latency_p95_s": 16.309,
+      "total_tags": 325,
+      "none_counts": {
+        "Emotional_Tone": 8,
+        "Thematic_Content": 13,
+        "Narrative_Structure": 9,
+        "Lyrical_Style": 10
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.776,
+      "latency_p95_s": 16.922,
+      "total_tags": 344,
+      "none_counts": {
+        "Emotional_Tone": 11,
+        "Thematic_Content": 24,
+        "Narrative_Structure": 11,
+        "Lyrical_Style": 14
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 10.893,
+      "latency_p95_s": 15.446,
+      "total_tags": 355,
+      "none_counts": {
+        "Emotional_Tone": 10,
+        "Thematic_Content": 18,
+        "Narrative_Structure": 14,
+        "Lyrical_Style": 15
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V3_EvidenceFirst",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.856,
+      "latency_p95_s": 17.858,
+      "total_tags": 338,
+      "none_counts": {
+        "Emotional_Tone": 11,
+        "Thematic_Content": 22,
+        "Narrative_Structure": 9,
+        "Lyrical_Style": 17
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V4_RobustNone",
+    "temperature": 0.0,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.328,
+      "latency_p95_s": 21.291,
+      "total_tags": 346,
+      "none_counts": {
+        "Emotional_Tone": 14,
+        "Thematic_Content": 19,
+        "Narrative_Structure": 18,
+        "Lyrical_Style": 13
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V4_RobustNone",
+    "temperature": 0.2,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 9.919,
+      "latency_p95_s": 24.512,
+      "total_tags": 336,
+      "none_counts": {
+        "Emotional_Tone": 13,
+        "Thematic_Content": 19,
+        "Narrative_Structure": 15,
+        "Lyrical_Style": 10
+      }
+    }
+  },
+  {
+    "model": "deepseek-v3p1",
+    "variant": "V4_RobustNone",
+    "temperature": 0.5,
+    "metrics": {
+      "json_validity_rate": 1.0,
+      "oov_rate": 0.0,
+      "cardinality_errors": 0,
+      "latency_p50_s": 11.654,
+      "latency_p95_s": 26.699,
+      "total_tags": 357,
+      "none_counts": {
+        "Emotional_Tone": 20,
+        "Thematic_Content": 28,
+        "Narrative_Structure": 26,
+        "Lyrical_Style": 22
+      }
+    }
+  }
+]
