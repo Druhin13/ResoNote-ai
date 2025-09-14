@@ -17,18 +17,20 @@ You will be asked to listen to and tag 50 music tracks. For each track:
 1. **Review the track information and lyrics** displayed on screen
 2. **Listen to the complete track** on Spotify (a link will open automatically)
 3. **Apply tags** in four categories:
+
    - **Emotional Tone**: The feelings or emotions expressed in the music (e.g., Joy, Sadness, Nostalgia)
    - **Thematic Content**: The subject matter or topics addressed (e.g., Love, Heartbreak, Success)
    - **Narrative Structure**: How the song tells its story (e.g., First Person, Narrative_Yes)
-   - **Lyrical Style**: The literary techniques used (e.g., Metaphor, Repetition, Vivid_Imagery)
+   - **Lyrical Style**: The literary techniques used (e.g., Metaphor, Repetition, Vivid\*Imagery)
+     <br><br>
+     _You may select multiple tags within a facet if they are clearly supported by the lyrics. Use None only when no listed tags in that facet apply._
 
 ## Important Guidelines
 
 ### Take Your Time
 
 - There is no time limit for this study
-- Listen to each song completely before tagging
-- Consider both the music and the lyrics when making your judgments, with a special emphasis on the lyrics as this project focuses on lyrical semantics
+- Prioritize textual evidence in lyrics. Use audio cues (performance, timbre) only to disambiguate when lyrics are ambiguous.
 - You can take breaks between tracks whenever needed
 - Your progress is automatically saved after each track
 
@@ -39,6 +41,7 @@ You will be asked to listen to and tag 50 music tracks. For each track:
 - If you're uncertain about a tag, you can access definitions in the program
 - Trust your intuition – your expert judgment is what we're seeking
 - Remember that the goal is to identify the emotional resonance and narrative aspects that might connect with different user contexts
+- Do not use music videos, artist bios, or external websites. Judge only from the provided lyrics/audio
 
 ### Be Consistent
 
@@ -46,6 +49,7 @@ You will be asked to listen to and tag 50 music tracks. For each track:
 - Use the "None" tag only when no other tags in that category apply
 - If you make a mistake, you can retry tagging a track
 - Use the confidence scoring to indicate your certainty about each tag
+- Rate confidence 1–10 (low→high)
 
 ## Confidentiality and Recognition
 

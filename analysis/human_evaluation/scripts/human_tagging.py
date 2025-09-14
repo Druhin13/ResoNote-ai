@@ -75,11 +75,11 @@ PROJECT_INFO = {
     "institution": "University of London, Computer Science",
     "contact": "dt158@student.london.ac.uk",
     "version": "1.0.0",
-    "date": "2023-2024"
+    "date": "2025"
 }
 
-# Path to dev.json file - hardcoded to avoid asking the annotator
-DEV_FILE_PATH = "analysis/llm_selection/splits/dev.json"
+# Path to eval_for_human_tagging.json file - hardcoded to avoid asking the annotator
+DEV_FILE_PATH = "analysis/human_evaluation/eval_for_human_tagging.json"
 
 # Create console
 console = Console()
@@ -615,6 +615,9 @@ def main():
     # Filter out already tagged tracks
     tagged_ids = {track["track_id"] for track in tagged_tracks}
     tracks_to_tag = [track for track in all_tracks if track.get("track_id") not in tagged_ids]
+    
+    # Randomize the order of remaining tracks
+    random.shuffle(tracks_to_tag)
     
     if not tracks_to_tag:
         console.print("[green]You have already tagged all tracks![/]")
