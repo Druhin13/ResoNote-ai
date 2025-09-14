@@ -1,0 +1,17 @@
+{
+  "model": "glm-4p5",
+  "variant": "V0_Comprehensive",
+  "temperature": 0.0,
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "tag_style_ok_rate": 0.9986,
+    "unsure_rate": 0.0042,
+    "avg_tags_per_facet": 3.55,
+    "latency_p50_s": 2.771,
+    "latency_p95_s": 4.133,
+    "input_tokens_avg": 539.7,
+    "output_tokens_avg": 86.9,
+    "total_tracks": 50,
+    "ok_tracks": 50
+  }
+}

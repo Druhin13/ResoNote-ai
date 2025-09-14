@@ -1,0 +1,17 @@
+{
+  "model": "deepseek-v3p1",
+  "variant": "V2_Minimal",
+  "temperature": 0.2,
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "tag_style_ok_rate": 1.0,
+    "unsure_rate": 0.003,
+    "avg_tags_per_facet": 3.315,
+    "latency_p50_s": 2.136,
+    "latency_p95_s": 6.835,
+    "input_tokens_avg": 452.7,
+    "output_tokens_avg": 83.6,
+    "total_tracks": 50,
+    "ok_tracks": 50
+  }
+}

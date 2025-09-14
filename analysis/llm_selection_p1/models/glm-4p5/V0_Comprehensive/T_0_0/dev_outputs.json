@@ -1,0 +1,1662 @@
+[
+  {
+    "track_id": "3pDHW8LsKjbX6nVSbs8uGU",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Reassuring",
+        "Affirming",
+        "Hopeful"
+      ],
+      "Thematic_Content": [
+        "Love",
+        "Acceptance",
+        "Destiny"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Direct-address",
+        "Repetitive-chorus"
+      ],
+      "Lyrical_Style": [
+        "Metaphorical",
+        "Repetitive",
+        "Simple"
+      ]
+    },
+    "latency": 2.771,
+    "truncated": false,
+    "input_tokens_est": 423,
+    "output_tokens_est": 78
+  },
+  {
+    "track_id": "52Hq1nvCDDZ17dhgGWLnCI",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "hopeful",
+        "liberating",
+        "reflective"
+      ],
+      "Thematic_Content": [
+        "freedom",
+        "happiness",
+        "struggle",
+        "aspiration"
+      ],
+      "Narrative_Structure": [
+        "repetitive",
+        "questioning",
+        "declarative"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "colloquial",
+        "metaphorical"
+      ]
+    },
+    "latency": 3.185,
+    "truncated": false,
+    "input_tokens_est": 421,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "44NxXlFEx7nMrOGhEff3Sl",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "despair",
+        "hope",
+        "fear",
+        "longing"
+      ],
+      "Thematic_Content": [
+        "emptiness",
+        "search",
+        "light",
+        "darkness",
+        "time"
+      ],
+      "Narrative_Structure": [
+        "cyclical",
+        "first-person",
+        "nonlinear"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "metaphorical",
+        "minimalist"
+      ]
+    },
+    "latency": 3.199,
+    "truncated": false,
+    "input_tokens_est": 305,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "55S2PQgSMYAhgoTCcGCDfw",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Heartbreak",
+        "Conflicted",
+        "Resentful",
+        "Longing"
+      ],
+      "Thematic_Content": [
+        "Toxic-relationship",
+        "Love-hate",
+        "Codependency",
+        "Manipulation"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Circular",
+        "Flashbacks",
+        "Push-pull"
+      ],
+      "Lyrical_Style": [
+        "Repetitive",
+        "Metaphor",
+        "Contrast",
+        "Direct-address"
+      ]
+    },
+    "latency": 3.497,
+    "truncated": false,
+    "input_tokens_est": 683,
+    "output_tokens_est": 95
+  },
+  {
+    "track_id": "72XxzjvIBR0TKljL0ETcGQ",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "confident",
+        "seductive",
+        "assertive"
+      ],
+      "Thematic_Content": [
+        "attraction",
+        "luxury",
+        "nightlife",
+        "pursuit"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "linear",
+        "repetitive"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "braggadocio",
+        "colloquial"
+      ]
+    },
+    "latency": 3.552,
+    "truncated": false,
+    "input_tokens_est": 914,
+    "output_tokens_est": 82
+  },
+  {
+    "track_id": "3wScL5W8H40zzCKN0atfBk",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Aggressive",
+        "Defiant",
+        "Confident",
+        "Rebellious",
+        "Hostile"
+      ],
+      "Thematic_Content": [
+        "Violence",
+        "Street-life",
+        "Money",
+        "Power",
+        "Drugs"
+      ],
+      "Narrative_Structure": [
+        "Repetitive",
+        "Non-linear",
+        "Boastful",
+        "Confrontational",
+        "Unsure"
+      ],
+      "Lyrical_Style": [
+        "Braggadocio",
+        "Street-slang",
+        "Metaphors",
+        "Rhythmic",
+        "Explicit"
+      ]
+    },
+    "latency": 3.842,
+    "truncated": false,
+    "input_tokens_est": 963,
+    "output_tokens_est": 111
+  },
+  {
+    "track_id": "4jPrT31sSgKHikffKSLt8q",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "nostalgic",
+        "carefree",
+        "yearning",
+        "celebratory"
+      ],
+      "Thematic_Content": [
+        "homesickness",
+        "regional-comparison",
+        "party-lifestyle",
+        "romance",
+        "travel"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "journey",
+        "geographical-contrast",
+        "repetition"
+      ],
+      "Lyrical_Style": [
+        "repetitive-chorus",
+        "regional-references",
+        "sensory-imagery",
+        "colloquial"
+      ]
+    },
+    "latency": 3.85,
+    "truncated": false,
+    "input_tokens_est": 674,
+    "output_tokens_est": 111
+  },
+  {
+    "track_id": "191tSXy3hWRbFMJxZWjE8K",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "melancholy",
+        "longing",
+        "heartbreak",
+        "loneliness"
+      ],
+      "Thematic_Content": [
+        "unrequited-love",
+        "emotional-pain",
+        "dreams-vs-reality",
+        "abandonment"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "nonlinear",
+        "dream-sequences",
+        "emotional-reflection"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "imagery-heavy",
+        "metaphorical",
+        "questioning"
+      ]
+    },
+    "latency": 3.981,
+    "truncated": false,
+    "input_tokens_est": 414,
+    "output_tokens_est": 105
+  },
+  {
+    "track_id": "6FGy43b78gUiODw75YTbF6",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "wistful",
+        "resigned"
+      ],
+      "Thematic_Content": [
+        "identity",
+        "self-acceptance",
+        "social-pressure"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "linear"
+      ],
+      "Lyrical_Style": [
+        "colloquial",
+        "direct"
+      ]
+    },
+    "latency": 2.264,
+    "truncated": false,
+    "input_tokens_est": 184,
+    "output_tokens_est": 63
+  },
+  {
+    "track_id": "63VIHXbK5zjOAKpmMJkrEu",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "romantic",
+        "devoted",
+        "tender"
+      ],
+      "Thematic_Content": [
+        "love",
+        "commitment",
+        "promises"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "declaration",
+        "repetitive"
+      ],
+      "Lyrical_Style": [
+        "simple",
+        "direct",
+        "repetitive"
+      ]
+    },
+    "latency": 2.009,
+    "truncated": false,
+    "input_tokens_est": 331,
+    "output_tokens_est": 70
+  },
+  {
+    "track_id": "0cDEFCbsDMQbxKodJyRhsK",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Skeptical",
+        "Resigned",
+        "Reflective"
+      ],
+      "Thematic_Content": [
+        "Manipulation",
+        "Deception",
+        "Relationships",
+        "Trust"
+      ],
+      "Narrative_Structure": [
+        "Repetitive",
+        "First-person",
+        "Non-linear"
+      ],
+      "Lyrical_Style": [
+        "Conversational",
+        "Repetitive",
+        "Direct-address"
+      ]
+    },
+    "latency": 2.322,
+    "truncated": false,
+    "input_tokens_est": 484,
+    "output_tokens_est": 79
+  },
+  {
+    "track_id": "78P2cNBhbdjXWIRYuEXkV6",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "longing",
+        "anxious",
+        "lonely",
+        "hopeful"
+      ],
+      "Thematic_Content": [
+        "relationship",
+        "distance",
+        "communication",
+        "technology"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "cyclical",
+        "repetitive"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "direct",
+        "chorus-heavy"
+      ]
+    },
+    "latency": 2.26,
+    "truncated": false,
+    "input_tokens_est": 488,
+    "output_tokens_est": 79
+  },
+  {
+    "track_id": "2lYTJK94hb0fd1LQtb6Dhk",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Needy",
+        "Anxious",
+        "Dependent"
+      ],
+      "Thematic_Content": [
+        "Fear-of-abandonment",
+        "Relationship-dependency",
+        "Comfort"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Repetitive",
+        "Circular"
+      ],
+      "Lyrical_Style": [
+        "Repetitive-chorus",
+        "Direct-appeal",
+        "Simple-metaphors"
+      ]
+    },
+    "latency": 2.372,
+    "truncated": false,
+    "input_tokens_est": 645,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "3MKmgFzutW0Sex4Zs9WvKc",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "tranquil",
+        "awakening",
+        "yearning",
+        "repetitive"
+      ],
+      "Thematic_Content": [
+        "cosmic-connection",
+        "solitude",
+        "awakening",
+        "unity",
+        "transcendence"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "chronological",
+        "transformation",
+        "repetitive"
+      ],
+      "Lyrical_Style": [
+        "metaphorical",
+        "repetitive",
+        "minimalist",
+        "cosmic-imagery"
+      ]
+    },
+    "latency": 3.044,
+    "truncated": false,
+    "input_tokens_est": 365,
+    "output_tokens_est": 103
+  },
+  {
+    "track_id": "7aUgMirBR4cSrAOKIIdrFa",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "romantic",
+        "tender",
+        "nostalgic",
+        "hopeful"
+      ],
+      "Thematic_Content": [
+        "love",
+        "commitment",
+        "future",
+        "devotion"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "chronological",
+        "reflective",
+        "recurring-imagery"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "imagery-rich",
+        "simple",
+        "conversational"
+      ]
+    },
+    "latency": 2.461,
+    "truncated": false,
+    "input_tokens_est": 508,
+    "output_tokens_est": 92
+  },
+  {
+    "track_id": "6R0B2jrdkePpjR6hx8a6I9",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Cynical",
+        "Ironic",
+        "Sarcastic",
+        "Celebratory",
+        "Ambivalent"
+      ],
+      "Thematic_Content": [
+        "Good-vs-evil",
+        "Hollywood-culture",
+        "Materialism",
+        "Spirituality",
+        "Escapism"
+      ],
+      "Narrative_Structure": [
+        "Fragmented",
+        "Non-linear",
+        "Repetitive-chorus",
+        "Shifting-perspectives",
+        "Abstract"
+      ],
+      "Lyrical_Style": [
+        "Surreal",
+        "Metaphorical",
+        "Colloquial",
+        "Cultural-references",
+        "Repetitive"
+      ]
+    },
+    "latency": 3.056,
+    "truncated": false,
+    "input_tokens_est": 405,
+    "output_tokens_est": 125
+  },
+  {
+    "track_id": "1gD7eTBGy2JhusmaCWYvMd",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Determined",
+        "Repetitive",
+        "Unsure"
+      ],
+      "Thematic_Content": [
+        "Work",
+        "Effort",
+        "Persistence"
+      ],
+      "Narrative_Structure": [
+        "Repetitive",
+        "Linear",
+        "Unsure"
+      ],
+      "Lyrical_Style": [
+        "Minimalist",
+        "Repetitive",
+        "Rhythmic"
+      ]
+    },
+    "latency": 2.459,
+    "truncated": false,
+    "input_tokens_est": 414,
+    "output_tokens_est": 74
+  },
+  {
+    "track_id": "67XXGKQrlBLCAg3gmHkamP",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "joyful",
+        "hopeful",
+        "nostalgic",
+        "warm"
+      ],
+      "Thematic_Content": [
+        "Christmas",
+        "friendship",
+        "togetherness",
+        "celebration"
+      ],
+      "Narrative_Structure": [
+        "repetitive",
+        "reflective",
+        "forward-looking"
+      ],
+      "Lyrical_Style": [
+        "simple",
+        "melodic",
+        "traditional"
+      ]
+    },
+    "latency": 2.391,
+    "truncated": false,
+    "input_tokens_est": 402,
+    "output_tokens_est": 82
+  },
+  {
+    "track_id": "75NGdzR6LSC1r0KB5mltP9",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Aggressive",
+        "Confident",
+        "Defiant",
+        "Boastful"
+      ],
+      "Thematic_Content": [
+        "Street-life",
+        "Violence",
+        "Drug-dealing",
+        "Materialism",
+        "Sexual-conquest"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Boastful-anecdotes",
+        "Non-linear",
+        "Repetitive-hook"
+      ],
+      "Lyrical_Style": [
+        "Street-slang",
+        "Explicit",
+        "Rhythmic",
+        "Metaphors",
+        "Repetitive"
+      ]
+    },
+    "latency": 2.261,
+    "truncated": false,
+    "input_tokens_est": 771,
+    "output_tokens_est": 110
+  },
+  {
+    "track_id": "0Ov4x4mro5sTaBlzlDuXYg",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Angry",
+        "Defiant",
+        "Resigned",
+        "Painful"
+      ],
+      "Thematic_Content": [
+        "Rejection",
+        "Independence",
+        "Suffering",
+        "Emotional-distance"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Repetitive",
+        "Non-linear"
+      ],
+      "Lyrical_Style": [
+        "Direct",
+        "Repetitive",
+        "Metaphorical",
+        "Confrontational"
+      ]
+    },
+    "latency": 2.715,
+    "truncated": false,
+    "input_tokens_est": 546,
+    "output_tokens_est": 90
+  },
+  {
+    "track_id": "7CeDtxI8CDJPaH3PhJPGFJ",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "reverent",
+        "grateful",
+        "hopeful"
+      ],
+      "Thematic_Content": [
+        "faith",
+        "divinity",
+        "gratitude",
+        "resilience"
+      ],
+      "Narrative_Structure": [
+        "repetitive",
+        "first-person",
+        "non-linear"
+      ],
+      "Lyrical_Style": [
+        "multilingual",
+        "call-response",
+        "simple"
+      ]
+    },
+    "latency": 2.032,
+    "truncated": false,
+    "input_tokens_est": 682,
+    "output_tokens_est": 78
+  },
+  {
+    "track_id": "6vQkI9C45TiTe1ZcVBzC6H",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "skeptical",
+        "confrontational",
+        "longing"
+      ],
+      "Thematic_Content": [
+        "social-media",
+        "authenticity",
+        "deception",
+        "relationships"
+      ],
+      "Narrative_Structure": [
+        "direct-address",
+        "repetition",
+        "present-timeline"
+      ],
+      "Lyrical_Style": [
+        "conversational",
+        "questioning",
+        "repetitive-chorus"
+      ]
+    },
+    "latency": 2.162,
+    "truncated": false,
+    "input_tokens_est": 587,
+    "output_tokens_est": 84
+  },
+  {
+    "track_id": "1R0QOBvAKtiqGgLz1R2foW",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "philosophical",
+        "unifying",
+        "rebellious",
+        "balanced"
+      ],
+      "Thematic_Content": [
+        "unity",
+        "duality",
+        "wisdom",
+        "wickedness",
+        "humanity"
+      ],
+      "Narrative_Structure": [
+        "declarative",
+        "reflective",
+        "progressive"
+      ],
+      "Lyrical_Style": [
+        "poetic",
+        "rhetorical",
+        "balanced",
+        "declarative"
+      ]
+    },
+    "latency": 2.62,
+    "truncated": false,
+    "input_tokens_est": 342,
+    "output_tokens_est": 90
+  },
+  {
+    "track_id": "1fE5elkDubOWunpWJNVFKK",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "melancholic",
+        "resigned",
+        "hopeful"
+      ],
+      "Thematic_Content": [
+        "misfortune",
+        "self-acceptance",
+        "resilience",
+        "growth"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "reflective",
+        "repetitive"
+      ],
+      "Lyrical_Style": [
+        "metaphorical",
+        "rhyming",
+        "direct-address"
+      ]
+    },
+    "latency": 1.898,
+    "truncated": false,
+    "input_tokens_est": 555,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "6nLevNsmpcke4HmgdVbapD",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Ironic",
+        "Chaotic",
+        "Melancholic"
+      ],
+      "Thematic_Content": [
+        "Absurdity",
+        "Relationships",
+        "Confusion",
+        "Celebration"
+      ],
+      "Narrative_Structure": [
+        "Non-linear",
+        "Stream-of-consciousness",
+        "Repetitive"
+      ],
+      "Lyrical_Style": [
+        "Surreal",
+        "Metaphorical",
+        "Conversational"
+      ]
+    },
+    "latency": 2.762,
+    "truncated": false,
+    "input_tokens_est": 429,
+    "output_tokens_est": 84
+  },
+  {
+    "track_id": "4lOYl3LF1FYE6JbFyFyVyo",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "passionate",
+        "intense",
+        "desperate"
+      ],
+      "Thematic_Content": [
+        "love",
+        "desire",
+        "drugs",
+        "relationship"
+      ],
+      "Narrative_Structure": [
+        "repetitive",
+        "fragmented",
+        "direct-appeal"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "colloquial",
+        "simple"
+      ]
+    },
+    "latency": 2.138,
+    "truncated": false,
+    "input_tokens_est": 466,
+    "output_tokens_est": 79
+  },
+  {
+    "track_id": "6yerbJThMH9Yj6FytuZTiD",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "heartbreak",
+        "longing",
+        "nostalgia"
+      ],
+      "Thematic_Content": [
+        "lost-love",
+        "betrayal",
+        "memory"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "past-to-present",
+        "reflection"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "direct",
+        "simple"
+      ]
+    },
+    "latency": 1.693,
+    "truncated": false,
+    "input_tokens_est": 351,
+    "output_tokens_est": 73
+  },
+  {
+    "track_id": "7oUKw1urKfCeDfRir0483R",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Confident",
+        "Aggressive",
+        "Triumphant"
+      ],
+      "Thematic_Content": [
+        "Success",
+        "Loyalty",
+        "Dominance",
+        "Wealth"
+      ],
+      "Narrative_Structure": [
+        "Boastful",
+        "First-person",
+        "Repetitive"
+      ],
+      "Lyrical_Style": [
+        "Street",
+        "Repetitive",
+        "Metaphoric",
+        "Explicit"
+      ]
+    },
+    "latency": 2.634,
+    "truncated": false,
+    "input_tokens_est": 839,
+    "output_tokens_est": 84
+  },
+  {
+    "track_id": "500l6Cwe40hkPqS7Sf7ufY",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Boastful",
+        "Aggressive",
+        "Confident",
+        "Reckless"
+      ],
+      "Thematic_Content": [
+        "Wealth",
+        "Luxury",
+        "Violence",
+        "Sex",
+        "Street-life"
+      ],
+      "Narrative_Structure": [
+        "Repetitive",
+        "First-person",
+        "Non-linear",
+        "Bragging"
+      ],
+      "Lyrical_Style": [
+        "Minimalist",
+        "Repetitive",
+        "Street-slang",
+        "Metaphor",
+        "Boast-rap"
+      ]
+    },
+    "latency": 2.467,
+    "truncated": false,
+    "input_tokens_est": 724,
+    "output_tokens_est": 104
+  },
+  {
+    "track_id": "6twjbQiAbWOMUt4S8RoDbk",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Awe",
+        "Wonder",
+        "Romantic",
+        "Optimistic"
+      ],
+      "Thematic_Content": [
+        "Magic",
+        "Love",
+        "Miracles",
+        "Fate"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Chronological",
+        "Revelation"
+      ],
+      "Lyrical_Style": [
+        "Repetitive",
+        "Metaphorical",
+        "Imagery-rich"
+      ]
+    },
+    "latency": 2.612,
+    "truncated": false,
+    "input_tokens_est": 374,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "4JsOMTAmz7rFa29WXspLzU",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Anxious",
+        "Insecure",
+        "Resigned",
+        "Defiant"
+      ],
+      "Thematic_Content": [
+        "Self-acceptance",
+        "Fame",
+        "Isolation",
+        "Identity"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Repetitive",
+        "Circular"
+      ],
+      "Lyrical_Style": [
+        "Direct",
+        "Repetitive",
+        "Conversational"
+      ]
+    },
+    "latency": 3.696,
+    "truncated": false,
+    "input_tokens_est": 797,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "0NrNoWSHBnCC0wTR35Dx4y",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "melancholy",
+        "longing",
+        "nostalgic"
+      ],
+      "Thematic_Content": [
+        "loss",
+        "border",
+        "day-of-the-dead",
+        "memory"
+      ],
+      "Narrative_Structure": [
+        "circular",
+        "first-person",
+        "dream-sequence"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "imagery-rich",
+        "cultural-references"
+      ]
+    },
+    "latency": 1.966,
+    "truncated": false,
+    "input_tokens_est": 439,
+    "output_tokens_est": 85
+  },
+  {
+    "track_id": "29jDoQ19dWzGKoDLOxgzgY",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "melancholic",
+        "longing",
+        "mysterious"
+      ],
+      "Thematic_Content": [
+        "loss",
+        "identity",
+        "transformation"
+      ],
+      "Narrative_Structure": [
+        "question-based",
+        "unanswered",
+        "contrast"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "metaphorical",
+        "rhythmic"
+      ]
+    },
+    "latency": 1.742,
+    "truncated": false,
+    "input_tokens_est": 248,
+    "output_tokens_est": 73
+  },
+  {
+    "track_id": "6eiztdXRkooWsBt2xToMWI",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Aggressive",
+        "Possessive",
+        "Menacing",
+        "Unhinged"
+      ],
+      "Thematic_Content": [
+        "Rejection",
+        "Possession",
+        "Violence",
+        "Heartbreak",
+        "Revenge"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Linear",
+        "Threatening",
+        "Repetitive"
+      ],
+      "Lyrical_Style": [
+        "Explicit",
+        "Repetitive",
+        "Dark-humor",
+        "Metaphoric",
+        "Confrontational"
+      ]
+    },
+    "latency": 4.133,
+    "truncated": false,
+    "input_tokens_est": 638,
+    "output_tokens_est": 103
+  },
+  {
+    "track_id": "2qXicQG06oT0ijKBznpgQv",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Nostalgic",
+        "Melancholy",
+        "Resigned"
+      ],
+      "Thematic_Content": [
+        "Lost-friendship",
+        "Growing-apart",
+        "Change"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Linear-timeline",
+        "Reflection"
+      ],
+      "Lyrical_Style": [
+        "Repetitive",
+        "Conversational",
+        "Direct-address"
+      ]
+    },
+    "latency": 1.679,
+    "truncated": false,
+    "input_tokens_est": 524,
+    "output_tokens_est": 79
+  },
+  {
+    "track_id": "6AqmtKsmokIz13Y7g8LQ5Q",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "tense",
+        "skeptical",
+        "tempted"
+      ],
+      "Thematic_Content": [
+        "infidelity",
+        "secrecy",
+        "doubt"
+      ],
+      "Narrative_Structure": [
+        "repetition",
+        "questioning",
+        "circular"
+      ],
+      "Lyrical_Style": [
+        "conversational",
+        "direct-address",
+        "rhythmic"
+      ]
+    },
+    "latency": 3.2,
+    "truncated": false,
+    "input_tokens_est": 563,
+    "output_tokens_est": 77
+  },
+  {
+    "track_id": "4B1HU7zxSJSMzinQG3lqOe",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Determined",
+        "Resigned",
+        "Defiant"
+      ],
+      "Thematic_Content": [
+        "Fate",
+        "Work-struggle",
+        "Alcohol",
+        "Choices"
+      ],
+      "Narrative_Structure": [
+        "Repetitive",
+        "First-person",
+        "Linear"
+      ],
+      "Lyrical_Style": [
+        "Metaphorical",
+        "Repetitive",
+        "Direct"
+      ]
+    },
+    "latency": 3.463,
+    "truncated": false,
+    "input_tokens_est": 607,
+    "output_tokens_est": 77
+  },
+  {
+    "track_id": "5WeMW3BHiC7loQLKo8uyBQ",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "adventurous",
+        "hopeful",
+        "nostalgic"
+      ],
+      "Thematic_Content": [
+        "journey",
+        "starlight",
+        "memory",
+        "perseverance"
+      ],
+      "Narrative_Structure": [
+        "forward-moving",
+        "repetitive",
+        "chorus-based"
+      ],
+      "Lyrical_Style": [
+        "bilingual",
+        "imagery-rich",
+        "metaphorical"
+      ]
+    },
+    "latency": 2.771,
+    "truncated": false,
+    "input_tokens_est": 406,
+    "output_tokens_est": 83
+  },
+  {
+    "track_id": "0a03EXQtyt5n9epnhCLOep",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "longing",
+        "reassuring",
+        "nostalgic"
+      ],
+      "Thematic_Content": [
+        "home",
+        "travel",
+        "love",
+        "family"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "circular",
+        "repetitive"
+      ],
+      "Lyrical_Style": [
+        "simple",
+        "repetitive",
+        "anthemic"
+      ]
+    },
+    "latency": 3.908,
+    "truncated": false,
+    "input_tokens_est": 623,
+    "output_tokens_est": 76
+  },
+  {
+    "track_id": "46jOgP9ST1fahTOSvTesil",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "energetic",
+        "hopeful",
+        "intense"
+      ],
+      "Thematic_Content": [
+        "light",
+        "rescue",
+        "darkness",
+        "salvation"
+      ],
+      "Narrative_Structure": [
+        "repetitive",
+        "metaphorical",
+        "journey"
+      ],
+      "Lyrical_Style": [
+        "electronic",
+        "anthemic",
+        "repetitive"
+      ]
+    },
+    "latency": 2.94,
+    "truncated": false,
+    "input_tokens_est": 832,
+    "output_tokens_est": 79
+  },
+  {
+    "track_id": "5AdnkoZJuRJCYqYBIzSqFb",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "vulnerable",
+        "resilient",
+        "uncertain",
+        "hopeful"
+      ],
+      "Thematic_Content": [
+        "relationships",
+        "self-discovery",
+        "emotional-struggle",
+        "perseverance"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "reflective",
+        "cyclical"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "metaphorical",
+        "conversational"
+      ]
+    },
+    "latency": 5.073,
+    "truncated": false,
+    "input_tokens_est": 609,
+    "output_tokens_est": 88
+  },
+  {
+    "track_id": "3Hyupd0svDiPkTtTYYb8sF",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Nostalgic",
+        "Melancholic",
+        "Reflective"
+      ],
+      "Thematic_Content": [
+        "Past-glory",
+        "Lost-love",
+        "Fading-memories",
+        "Small-town-life"
+      ],
+      "Narrative_Structure": [
+        "Reminiscing",
+        "Non-linear",
+        "First-person"
+      ],
+      "Lyrical_Style": [
+        "Storytelling",
+        "Repetitive-chorus",
+        "Imagery-rich"
+      ]
+    },
+    "latency": 4.421,
+    "truncated": false,
+    "input_tokens_est": 510,
+    "output_tokens_est": 94
+  },
+  {
+    "track_id": "3YnwIp2b99p3e5dsFTXIIx",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "carefree",
+        "desire",
+        "reassuring"
+      ],
+      "Thematic_Content": [
+        "relationship",
+        "freedom",
+        "intimacy"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "nonlinear",
+        "conversational"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "colloquial",
+        "sensual"
+      ]
+    },
+    "latency": 3.198,
+    "truncated": false,
+    "input_tokens_est": 521,
+    "output_tokens_est": 77
+  },
+  {
+    "track_id": "7cOaQnykfKXFSXFsMRHNaL",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "longing",
+        "hopeful",
+        "resilient"
+      ],
+      "Thematic_Content": [
+        "long-distance-relationship",
+        "travel",
+        "love",
+        "separation"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "reflective",
+        "chorus-based"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "simple",
+        "direct"
+      ]
+    },
+    "latency": 3.68,
+    "truncated": false,
+    "input_tokens_est": 330,
+    "output_tokens_est": 77
+  },
+  {
+    "track_id": "2nBkgxlht8knPvUQN5Tmdk",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "contemplative",
+        "resistant",
+        "peaceful"
+      ],
+      "Thematic_Content": [
+        "nature",
+        "isolation",
+        "time"
+      ],
+      "Narrative_Structure": [
+        "circular",
+        "first-person",
+        "reflective"
+      ],
+      "Lyrical_Style": [
+        "repetitive",
+        "imagery",
+        "minimalist"
+      ]
+    },
+    "latency": 3.272,
+    "truncated": false,
+    "input_tokens_est": 244,
+    "output_tokens_est": 73
+  },
+  {
+    "track_id": "5ZleLDyrsRLPpkgXJpu3wU",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "reverent",
+        "steadfast",
+        "worshipful"
+      ],
+      "Thematic_Content": [
+        "faith",
+        "divine-power",
+        "eternity",
+        "spiritual-stability"
+      ],
+      "Narrative_Structure": [
+        "repetitive",
+        "declarative",
+        "first-person"
+      ],
+      "Lyrical_Style": [
+        "anthemic",
+        "metaphorical",
+        "refrain-heavy"
+      ]
+    },
+    "latency": 3.583,
+    "truncated": false,
+    "input_tokens_est": 449,
+    "output_tokens_est": 82
+  },
+  {
+    "track_id": "4ws11TLfPlFknghjxP4ElV",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "heartbreak",
+        "longing",
+        "sorrow",
+        "desperation"
+      ],
+      "Thematic_Content": [
+        "lost-love",
+        "betrayal",
+        "loneliness",
+        "separation"
+      ],
+      "Narrative_Structure": [
+        "first-person",
+        "repetition",
+        "questioning",
+        "plea"
+      ],
+      "Lyrical_Style": [
+        "metaphorical",
+        "repetitive",
+        "emotional",
+        "direct-address"
+      ]
+    },
+    "latency": 3.695,
+    "truncated": false,
+    "input_tokens_est": 554,
+    "output_tokens_est": 93
+  },
+  {
+    "track_id": "6fl6APmdlrfy1SBSYYX8jm",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Urgent",
+        "Defiant",
+        "Spiritual",
+        "Passionate"
+      ],
+      "Thematic_Content": [
+        "Spiritual-warfare",
+        "Faith",
+        "Social-issues",
+        "End-times",
+        "Resistance"
+      ],
+      "Narrative_Structure": [
+        "Call-to-action",
+        "Repetitive",
+        "Proclamation",
+        "Warning"
+      ],
+      "Lyrical_Style": [
+        "Anaphora",
+        "Direct-address",
+        "Repetition",
+        "Declamatory"
+      ]
+    },
+    "latency": 3.298,
+    "truncated": false,
+    "input_tokens_est": 949,
+    "output_tokens_est": 99
+  },
+  {
+    "track_id": "2TWSilrWcTrgVKcP8kfEfg",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Confident",
+        "Boastful",
+        "Celebratory"
+      ],
+      "Thematic_Content": [
+        "Success",
+        "Wealth",
+        "Relationships",
+        "Fame"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Braggadocio",
+        "Repetitive-chorus"
+      ],
+      "Lyrical_Style": [
+        "Wordplay",
+        "Metaphor",
+        "Explicit",
+        "Boastful"
+      ]
+    },
+    "latency": 2.59,
+    "truncated": false,
+    "input_tokens_est": 877,
+    "output_tokens_est": 88
+  },
+  {
+    "track_id": "0XySogm94T51XF5F2jumXm",
+    "ok": true,
+    "error": null,
+    "parsed": {
+      "Emotional_Tone": [
+        "Angry",
+        "Heartbroken",
+        "Confused",
+        "Despairing",
+        "Cynical"
+      ],
+      "Thematic_Content": [
+        "Heartbreak",
+        "Toxic-relationships",
+        "Self-destruction",
+        "Search-for-love",
+        "Gender-stereotypes"
+      ],
+      "Narrative_Structure": [
+        "First-person",
+        "Circular",
+        "Stream-of-consciousness",
+        "Nonlinear",
+        "Repetitive"
+      ],
+      "Lyrical_Style": [
+        "Colloquial",
+        "Repetitive",
+        "Rhythmic",
+        "Explicit",
+        "Metaphorical"
+      ]
+    },
+    "latency": 2.84,
+    "truncated": false,
+    "input_tokens_est": 576,
+    "output_tokens_est": 120
+  }
+]

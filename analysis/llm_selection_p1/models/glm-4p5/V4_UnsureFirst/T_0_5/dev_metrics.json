@@ -1,0 +1,17 @@
+{
+  "model": "glm-4p5",
+  "variant": "V4_UnsureFirst",
+  "temperature": 0.5,
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "tag_style_ok_rate": 0.9688,
+    "unsure_rate": 0.0485,
+    "avg_tags_per_facet": 4.33,
+    "latency_p50_s": 2.487,
+    "latency_p95_s": 3.523,
+    "input_tokens_avg": 454.7,
+    "output_tokens_avg": 102.2,
+    "total_tracks": 50,
+    "ok_tracks": 50
+  }
+}

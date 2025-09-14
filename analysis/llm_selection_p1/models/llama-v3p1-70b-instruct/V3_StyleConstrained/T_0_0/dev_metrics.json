@@ -1,0 +1,17 @@
+{
+  "model": "llama-v3p1-70b-instruct",
+  "variant": "V3_StyleConstrained",
+  "temperature": 0.0,
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "tag_style_ok_rate": 0.9959,
+    "unsure_rate": 0.0427,
+    "avg_tags_per_facet": 4.915,
+    "latency_p50_s": 1.359,
+    "latency_p95_s": 1.715,
+    "input_tokens_avg": 464.7,
+    "output_tokens_avg": 106.6,
+    "total_tracks": 50,
+    "ok_tracks": 50
+  }
+}

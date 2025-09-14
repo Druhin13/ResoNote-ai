@@ -8,6 +8,8 @@ from pathlib import Path
 import webbrowser
 import platform
 import random
+import subprocess
+import shutil
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt, Confirm
@@ -15,6 +17,8 @@ from rich.table import Table
 from rich.text import Text
 from rich import box
 from rich.style import Style
+from rich.layout import Layout
+from rich.align import Align
 
 # Constants
 ALLOWED_TAGS = {
@@ -244,6 +248,46 @@ def format_lyrics(lyrics):
     formatted = Text("\n".join(wrapped_lines))
     return formatted
 
+def formatted_lyrics_string(lyrics):
+    if not lyrics:
+        return "[No lyrics available]"
+    lines = lyrics.split("\n")
+    wrapped_lines = []
+    for line in lines:
+        if len(line.strip()) == 0:
+            wrapped_lines.append("")
+        else:
+            wrapped_lines.extend(textwrap.wrap(line, width=80))
+    return "\n".join(wrapped_lines)
+
+def copy_to_clipboard(text):
+    try:
+        import pyperclip
+        pyperclip.copy(text)
+        return True
+    except Exception:
+        pass
+    try:
+        if platform.system() == "Darwin" and shutil.which("pbcopy"):
+            p = subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE)
+            p.communicate(input=text.encode("utf-8"))
+            return True
+        if platform.system() == "Windows":
+            p = subprocess.Popen(["clip"], stdin=subprocess.PIPE, shell=True)
+            p.communicate(input=text.encode("utf-16le"))
+            return True
+        if shutil.which("xclip"):
+            p = subprocess.Popen(["xclip", "-selection", "clipboard"], stdin=subprocess.PIPE)
+            p.communicate(input=text.encode("utf-8"))
+            return True
+        if shutil.which("xsel"):
+            p = subprocess.Popen(["xsel", "--clipboard", "--input"], stdin=subprocess.PIPE)
+            p.communicate(input=text.encode("utf-8"))
+            return True
+    except Exception:
+        pass
+    return False
+
 def open_spotify_url(track_id):
     """Open Spotify URL in the default browser."""
     url = f"https://open.spotify.com/track/{track_id}"
@@ -280,49 +324,92 @@ def display_tag_help(category):
     console.print("\n[bold cyan]Press Enter to return to tagging...[/]", end="")
     input()
 
+def _wrap_lines_to_width(lyrics: str, width: int):
+    if not lyrics:
+        return ["[No lyrics available]"]
+    lines = lyrics.split("\n")
+    wrapped = []
+    for line in lines:
+        if len(line.strip()) == 0:
+            wrapped.append("")
+        else:
+            wrapped.extend(textwrap.wrap(line, width=max(10, width)))
+    return wrapped
+
 def display_track_info(track, track_number, total_tracks):
     """Display track information and lyrics."""
     clear_screen()
-    
-    # Header with progress
-    console.print(Panel(
-        f"Track {track_number} of {total_tracks}",
-        title="Now Tagging",
-        border_style="blue"
-    ))
-    
-    # Track info panel
-    info_panel = Panel(
-        Text.assemble(
-            ("Track: ", "bold cyan"), (f"{track.get('track_name', 'Unknown')}\n", "white"),
-            ("Artist: ", "bold cyan"), (f"{track.get('artist_name', 'Unknown')}\n", "white"),
-            ("\nAudio Features:\n", "bold cyan"),
-            ("Energy: ", "dim cyan"), (f"{track.get('energy', 'N/A')}\n", "white"),
-            ("Valence: ", "dim cyan"), (f"{track.get('valence', 'N/A')}\n", "white"),
-            ("Tempo: ", "dim cyan"), (f"{track.get('tempo', 'N/A')} BPM\n", "white"),
-        ),
-        title="Track Information",
-        border_style="green"
+    term_w = console.size.width
+    term_h = console.size.height
+    header_h = 3 if term_h >= 24 else 2
+    footer_h = 3 if term_h >= 24 else 2
+    body_h = max(6, term_h - header_h - footer_h)
+    left_ratio = 1
+    right_ratio = 2
+
+    layout = Layout(name="root")
+    layout.split(
+        Layout(name="header", size=header_h),
+        Layout(name="body", ratio=1),
+        Layout(name="footer", size=footer_h),
     )
-    
-    # Lyrics panel
-    lyrics_panel = Panel(
-        format_lyrics(track.get("lyrics", "")),
-        title="Lyrics",
-        border_style="yellow",
-        width=100
+    layout["body"].split_row(
+        Layout(name="left", ratio=left_ratio),
+        Layout(name="right", ratio=right_ratio),
     )
+
+    title_text = Text.assemble(
+        ("Now Tagging  ", "bold blue"),
+        (f"Track {track_number} of {total_tracks}  ", "bold white"),
+        ("•  ", "dim"),
+        (track.get("artist_name", "Unknown") + " — " + track.get("track_name", "Unknown"), "bold")
+    )
+    layout["header"].update(Panel(Align.center(title_text), border_style="blue"))
+
+    info_lines = [
+        ("Artist: ", track.get("artist_name", "Unknown")),
+        ("Track: ", track.get("track_name", "Unknown")),
+        ("", ""),
+        ("Audio Features", ""),
+        ("Energy: ", str(track.get("energy", "N/A"))),
+        ("Valence: ", str(track.get("valence", "N/A"))),
+        ("Tempo: ", f"{track.get('tempo', 'N/A')} BPM"),
+        ("Popularity: ", str(track.get("popularity", "N/A")))
+    ]
+    info_text = Text()
+    for k, v in info_lines:
+        if k:
+            info_text.append(k, style="cyan")
+        if v:
+            info_text.append(v, style="white")
+        info_text.append("\n")
+    layout["left"].update(Panel(info_text, title="Track Information", border_style="green"))
+
+    body_inner_h = body_h - 2
+    right_width = int(term_w * (right_ratio / (left_ratio + right_ratio))) - 4
+    wrapped_lyrics = _wrap_lines_to_width(track.get("lyrics", ""), max(20, right_width))
+    max_lyric_lines = max(3, body_inner_h - 2)
+    visible_lyrics = wrapped_lyrics[:max_lyric_lines]
+    if len(wrapped_lyrics) > max_lyric_lines:
+        visible_lyrics.append("")
+        visible_lyrics.append("… (truncated to fit screen)")
+    lyrics_text = Text("\n".join(visible_lyrics))
+    layout["right"].update(Panel(lyrics_text, title="Lyrics", border_style="yellow"))
+
+    footer_msg = Text.assemble(
+        ("Press Enter to continue with tagging", "bold cyan"),
+        ("    •    ", "dim"),
+        ("Tip: Full lyrics copied to clipboard", "dim")
+    )
+    layout["footer"].update(Panel(Align.center(footer_msg), border_style="cyan"))
+
+    console.print(layout)
+
+    formatted_text = formatted_lyrics_string(track.get("lyrics", ""))
+    copy_to_clipboard(formatted_text)
     
-    console.print(info_panel)
-    console.print(lyrics_panel)
-    
-    # Open Spotify
-    spotify_url = open_spotify_url(track.get("track_id", ""))
-    
-    console.print("\n[bold cyan]Press Enter after listening to continue with tagging...[/]", end="")
     input()
-    
-    return spotify_url
+    return ""
 
 def tag_track(track, track_number, total_tracks):
     """Interactive tagging function for a single track."""

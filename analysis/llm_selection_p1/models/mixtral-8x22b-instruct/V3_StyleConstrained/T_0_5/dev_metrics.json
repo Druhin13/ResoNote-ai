@@ -1,0 +1,17 @@
+{
+  "model": "mixtral-8x22b-instruct",
+  "variant": "V3_StyleConstrained",
+  "temperature": 0.5,
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "tag_style_ok_rate": 0.999,
+    "unsure_rate": 0.001,
+    "avg_tags_per_facet": 4.86,
+    "latency_p50_s": 2.593,
+    "latency_p95_s": 2.955,
+    "input_tokens_avg": 464.7,
+    "output_tokens_avg": 110.9,
+    "total_tracks": 50,
+    "ok_tracks": 50
+  }
+}
