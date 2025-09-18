@@ -1,0 +1,16 @@
+{
+  "model": "accounts/fireworks/models/deepseek-v3p1",
+  "variant": "V0_Comprehensive",
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_tokens": 256,
+  "input_token_budget": 3500,
+  "output_token_budget": 256,
+  "timeout_s": 120,
+  "total_input_tracks": 22933,
+  "outputs_jsonl": "dataset/tagged/deepseek-v3p1/full_run.jsonl",
+  "truncated_contexts": 1,
+  "latency_avg_s": 2.658,
+  "input_tokens_avg": 605.7,
+  "output_tokens_avg": 81.3
+}
