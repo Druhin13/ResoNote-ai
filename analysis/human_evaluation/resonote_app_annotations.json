@@ -1,0 +1,2033 @@
+{
+  "session_id": "session-1758134236755-achyxgtno",
+  "completed_at": "2025-09-17T20:04:18.966Z",
+  "total_tracks": 50,
+  "completed_tracks": 50,
+  "annotations": [
+    {
+      "track_id": "1cClWZf6Y52TCufreJGrww",
+      "track_name": "Fed Baby’s",
+      "artist_name": "Moneybagg Yo",
+      "selections": {
+        "Emotional_Tone": [
+          "angry",
+          "resentful",
+          "bitter",
+          "defiant",
+          "vulnerable"
+        ],
+        "Thematic_Content": [
+          "betrayal",
+          "friendship",
+          "loyalty",
+          "revenge",
+          "violence"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "confession",
+          "refrain",
+          "retrospective"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "colloquial-language",
+          "slang",
+          "confessional",
+          "raw-honesty",
+          "storytelling"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:41:42.650Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "14WmnmH9lYxJJFYJsInynI",
+      "track_name": "Brave Surrender - Live",
+      "artist_name": "Kim Walker-Smith",
+      "selections": {
+        "Emotional_Tone": [
+          "hopeful",
+          "peaceful",
+          "tender",
+          "vulnerable",
+          "contemplative"
+        ],
+        "Thematic_Content": [
+          "salvation",
+          "religion",
+          "freedom",
+          "self-discovery",
+          "redemption"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "catharsis",
+          "resolution"
+        ],
+        "Lyrical_Style": [
+          "hymn",
+          "repetition",
+          "imagery",
+          "hook",
+          "confessional"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:43:41.467Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "5fK0Q3j2iUcQtiRDXlPW0K",
+      "track_name": "Want To",
+      "artist_name": "Dua Lipa",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "defiant",
+          "playful",
+          "seductive",
+          "upbeat"
+        ],
+        "Thematic_Content": [
+          "desire",
+          "hedonism",
+          "freedom",
+          "sexuality",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "colloquial-language",
+          "slang",
+          "hook",
+          "unapologetic-language",
+          "anthem"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:46:06.216Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "12d0oildmCSVKRW7SEHaZP",
+      "track_name": "Bad Ideas",
+      "artist_name": "Tessa Violet",
+      "selections": {
+        "Emotional_Tone": [
+          "yearning",
+          "vulnerable",
+          "romantic",
+          "playful",
+          "restless"
+        ],
+        "Thematic_Content": [
+          "desire",
+          "lust",
+          "youth",
+          "love",
+          "regret"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "question",
+          "confession"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "colloquial-language",
+          "confessional",
+          "raw-honesty",
+          "rhetorical-question"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:47:57.786Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4RaYjBnhMaDf0pnZgqh9yr",
+      "track_name": "Teufelsreich",
+      "artist_name": "Watain",
+      "selections": {
+        "Emotional_Tone": [
+          "menacing",
+          "somber",
+          "intense",
+          "tormented",
+          "fearful"
+        ],
+        "Thematic_Content": [
+          "religion",
+          "death",
+          "violence",
+          "war",
+          "mortality"
+        ],
+        "Narrative_Structure": [
+          "scene-setting",
+          "vignette",
+          "refrain",
+          "stream-of-consciousness"
+        ],
+        "Lyrical_Style": [
+          "imagery",
+          "metaphor",
+          "surrealism",
+          "free-verse",
+          "dreaminess"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:49:42.591Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0UWcwPvb17DgzoAiS32Ldw",
+      "track_name": "Young, Rich & Black",
+      "artist_name": "DDG",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "triumphant",
+          "playful",
+          "seductive"
+        ],
+        "Thematic_Content": [
+          "wealth",
+          "money",
+          "materialism",
+          "youth",
+          "identity",
+          "fame"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "slang",
+          "colloquial-language",
+          "unapologetic-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:51:55.022Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "2EPGlTyGYXA7WpSiXNIJSg",
+      "track_name": "DON'T LOOK BACK",
+      "artist_name": "Luke Christopher",
+      "selections": {
+        "Emotional_Tone": [
+          "tender",
+          "hopeful",
+          "vulnerable",
+          "romantic",
+          "yearning"
+        ],
+        "Thematic_Content": [
+          "love",
+          "loyalty",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "confession",
+          "question",
+          "wish"
+        ],
+        "Lyrical_Style": [
+          "hook",
+          "repetition",
+          "confessional",
+          "rhetorical-question",
+          "imagery"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:53:35.693Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "63MtMwfhxUvM2cyUNb5Iux",
+      "track_name": "First Time",
+      "artist_name": "Liam Payne",
+      "selections": {
+        "Emotional_Tone": [
+          "seductive",
+          "yearning",
+          "playful",
+          "confident",
+          "vulnerable"
+        ],
+        "Thematic_Content": [
+          "desire",
+          "love",
+          "youth",
+          "wealth",
+          "lust"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "question"
+        ],
+        "Lyrical_Style": [
+          "hook",
+          "repetition",
+          "colloquial-language",
+          "slang",
+          "imagery",
+          "metaphor"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:55:24.474Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "79iLSTbR8wgSVoKAnJtm8j",
+      "track_name": "Tell Me",
+      "artist_name": "Fredo",
+      "selections": {
+        "Emotional_Tone": [
+          "anxious",
+          "vulnerable",
+          "desperate",
+          "worried",
+          "tormented"
+        ],
+        "Thematic_Content": [
+          "loyalty",
+          "crime",
+          "survival",
+          "violence",
+          "money"
+        ],
+        "Narrative_Structure": [
+          "question",
+          "monologue",
+          "confession",
+          "refrain"
+        ],
+        "Lyrical_Style": [
+          "colloquial-language",
+          "slang",
+          "confessional",
+          "raw-honesty",
+          "rhetorical-question",
+          "storytelling"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:57:18.132Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "6twcrte6VIOBntlPeNk9nw",
+      "track_name": "Love On The Brain",
+      "artist_name": "Amaia Romero",
+      "selections": {
+        "Emotional_Tone": [
+          "vulnerable",
+          "tormented",
+          "passionate",
+          "pained",
+          "yearning"
+        ],
+        "Thematic_Content": [
+          "love",
+          "desire",
+          "heartbreak",
+          "vulnerability",
+          "pain"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "confession",
+          "catharsis"
+        ],
+        "Lyrical_Style": [
+          "metaphor",
+          "imagery",
+          "confessional",
+          "hook",
+          "repetition",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T18:59:07.541Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0ZWvo02qugJAKf2HjdD4fT",
+      "track_name": "BUBA",
+      "artist_name": "6ix9ine",
+      "selections": {
+        "Emotional_Tone": [
+          "menacing",
+          "threatening",
+          "defiant",
+          "intense",
+          "resentful"
+        ],
+        "Thematic_Content": [
+          "violence",
+          "crime",
+          "survival",
+          "money",
+          "revenge"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "monologue",
+          "warning",
+          "action"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "slang",
+          "colloquial-language",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:00:52.700Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4oh9w5Ir4OnmQoN9ikRlxF",
+      "track_name": "Up in Smoke",
+      "artist_name": "Thompson Square",
+      "selections": {
+        "Emotional_Tone": [
+          "yearning",
+          "vulnerable",
+          "passionate",
+          "restless",
+          "tormented"
+        ],
+        "Thematic_Content": [
+          "desire",
+          "addiction",
+          "infidelity",
+          "love"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "circularity"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "imagery",
+          "metaphor",
+          "hook",
+          "confessional"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:02:30.221Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "3CAqgqqx023Rff8tCQtsBz",
+      "track_name": "Big Mood",
+      "artist_name": "Mike Stud",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "triumphant",
+          "playful",
+          "seductive",
+          "defiant"
+        ],
+        "Thematic_Content": [
+          "wealth",
+          "materialism",
+          "desire",
+          "lust",
+          "loyalty"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "anthem",
+          "repetition",
+          "hook",
+          "slang",
+          "colloquial-language",
+          "unapologetic-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:04:12.167Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0Ez18vMiXHlDks9ZseQZfJ",
+      "track_name": "This Summer",
+      "artist_name": "Maroon 5",
+      "selections": {
+        "Emotional_Tone": [
+          "bitter",
+          "resentful",
+          "pained",
+          "yearning",
+          "restless"
+        ],
+        "Thematic_Content": [
+          "desire",
+          "materialism",
+          "fame",
+          "youth",
+          "heartbreak"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "scene-setting",
+          "vignette"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "imagery",
+          "hook",
+          "colloquial-language",
+          "sarcasm"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:06:04.183Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "38Vjqr7xTeIzDpclKOkzli",
+      "track_name": "YUSO",
+      "artist_name": "Kid Ink",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "playful",
+          "seductive",
+          "defiant",
+          "intense"
+        ],
+        "Thematic_Content": [
+          "sex",
+          "desire",
+          "lust",
+          "hedonism"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "slang",
+          "colloquial-language",
+          "unapologetic-language",
+          "raw-honesty",
+          "hook"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:07:55.753Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4nHV7YyK8KruEtie7JZVpJ",
+      "track_name": "Red Shoes - from the Dumplin' Original Motion Picture Soundtrack",
+      "artist_name": "Dolly Parton",
+      "selections": {
+        "Emotional_Tone": [
+          "nostalgic",
+          "sentimental",
+          "tender",
+          "reflective",
+          "hopeful"
+        ],
+        "Thematic_Content": [
+          "family",
+          "nostalgia",
+          "growing-up",
+          "resilience",
+          "self-discovery"
+        ],
+        "Narrative_Structure": [
+          "retrospective",
+          "vignette",
+          "scene-setting",
+          "refrain"
+        ],
+        "Lyrical_Style": [
+          "story-song",
+          "imagery",
+          "metaphor",
+          "repetition"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:09:41.384Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "60j0tXalnpq8iWnh4RyaSQ",
+      "track_name": "No Fooling Me",
+      "artist_name": "Ward Thomas",
+      "selections": {
+        "Emotional_Tone": [
+          "skeptical",
+          "defiant",
+          "cynical",
+          "sardonic"
+        ],
+        "Thematic_Content": [
+          "betrayal",
+          "love",
+          "heartbreak"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "confession",
+          "retrospective"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "colloquial-language",
+          "confessional",
+          "rhetorical-question",
+          "sarcasm"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:11:03.334Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "3IRlRg7tB9oturrFYObri5",
+      "track_name": "Red Letters - Southern-Style Edit",
+      "artist_name": "Crowder",
+      "selections": {
+        "Emotional_Tone": [
+          "hopeful",
+          "triumphant",
+          "peaceful",
+          "reflective",
+          "soulful"
+        ],
+        "Thematic_Content": [
+          "salvation",
+          "redemption",
+          "religion",
+          "death"
+        ],
+        "Narrative_Structure": [
+          "confession",
+          "catharsis",
+          "resolution",
+          "refrain",
+          "retrospective"
+        ],
+        "Lyrical_Style": [
+          "hymn",
+          "story-song",
+          "imagery",
+          "metaphor",
+          "repetition",
+          "confessional"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:12:33.288Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "3ggvoFaWTbh3ZfOg05vrh0",
+      "track_name": "Yours",
+      "artist_name": "Alina Baraz",
+      "selections": {
+        "Emotional_Tone": [
+          "tender",
+          "vulnerable",
+          "romantic",
+          "wistful",
+          "hopeful"
+        ],
+        "Thematic_Content": [
+          "love",
+          "desire",
+          "freedom",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "vignette",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "imagery",
+          "repetition",
+          "hook",
+          "confessional",
+          "dreaminess"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:14:03.537Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4LtufGlc9o8QtbFTp4Q37m",
+      "track_name": "Catastrophize",
+      "artist_name": "Noah Kahan",
+      "selections": {
+        "Emotional_Tone": [
+          "anxious",
+          "vulnerable",
+          "contemplative",
+          "introspective",
+          "hopeful"
+        ],
+        "Thematic_Content": [
+          "mental-health",
+          "vulnerability",
+          "self-discovery",
+          "resilience"
+        ],
+        "Narrative_Structure": [
+          "question",
+          "refrain",
+          "confession",
+          "retrospective"
+        ],
+        "Lyrical_Style": [
+          "confessional",
+          "imagery",
+          "repetition",
+          "rhetorical-question"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:15:29.209Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4ptonNXwbPtpiPX062ruaM",
+      "track_name": "Havana - No Rap Version",
+      "artist_name": "Camila Cabello",
+      "selections": {
+        "Emotional_Tone": [
+          "romantic",
+          "nostalgic",
+          "yearning",
+          "playful",
+          "wistful"
+        ],
+        "Thematic_Content": [
+          "love",
+          "nostalgia",
+          "desire",
+          "identity"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "retrospective",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "hook",
+          "repetition",
+          "imagery",
+          "metaphor",
+          "colloquial-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:17:04.412Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "3pOhcQHAz18zAPWU3S2CsR",
+      "track_name": "Mirror",
+      "artist_name": "IDER",
+      "selections": {
+        "Emotional_Tone": [
+          "anxious",
+          "vulnerable",
+          "introspective",
+          "contemplative",
+          "restless"
+        ],
+        "Thematic_Content": [
+          "mental-health",
+          "self-discovery",
+          "identity",
+          "loneliness",
+          "heartbreak"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "confession",
+          "question",
+          "refrain",
+          "retrospective"
+        ],
+        "Lyrical_Style": [
+          "confessional",
+          "repetition",
+          "rhetorical-question",
+          "imagery",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:18:43.724Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0Q8A7MPsoFg72xcVFBsS8Q",
+      "track_name": "LOGOUT",
+      "artist_name": "Saba",
+      "selections": {
+        "Emotional_Tone": [
+          "anxious",
+          "cynical",
+          "introspective",
+          "sardonic",
+          "worried"
+        ],
+        "Thematic_Content": [
+          "fame",
+          "identity",
+          "vulnerability",
+          "loneliness",
+          "mental-health"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "scene-setting",
+          "confession"
+        ],
+        "Lyrical_Style": [
+          "satire",
+          "colloquial-language",
+          "rhetorical-question",
+          "confessional",
+          "raw-honesty",
+          "repetition",
+          "imagery"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:20:27.753Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "2s7rDOGTmW95PYlF8QgNwV",
+      "track_name": "For You My Love",
+      "artist_name": "BUNT.",
+      "selections": {
+        "Emotional_Tone": [
+          "tender",
+          "hopeful",
+          "romantic",
+          "passionate",
+          "optimistic"
+        ],
+        "Thematic_Content": [
+          "loyalty",
+          "self-discovery",
+          "desire",
+          "love"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "wish",
+          "resolution"
+        ],
+        "Lyrical_Style": [
+          "hook",
+          "repetition",
+          "imagery",
+          "metaphor",
+          "confessional"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:23:23.239Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0bRgiiAzR0NXeWLieb27MJ",
+      "track_name": "Hot Damn",
+      "artist_name": "Blimes",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "playful",
+          "defiant",
+          "humorous",
+          "triumphant"
+        ],
+        "Thematic_Content": [
+          "ambition",
+          "success",
+          "wealth",
+          "materialism",
+          "identity",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "verse-chorus",
+          "refrain",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "slang",
+          "colloquial-language",
+          "repetition",
+          "wordplay",
+          "hook",
+          "unapologetic-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:25:08.632Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "3kosv2SiE01oo3QxTDJUtb",
+      "track_name": "BOOM",
+      "artist_name": "X Ambassadors",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "defiant",
+          "upbeat",
+          "triumphant",
+          "restless"
+        ],
+        "Thematic_Content": [
+          "heartbreak",
+          "freedom",
+          "self-discovery",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "resolution"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "anthem",
+          "colloquial-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:27:25.614Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "6Lxk3g1cFvHHfYkBh9oNkQ",
+      "track_name": "Picture (feat. Sheryl Crow)",
+      "artist_name": "Kid Rock",
+      "selections": {
+        "Emotional_Tone": [
+          "remorseful",
+          "regretful",
+          "yearning",
+          "vulnerable",
+          "melancholic"
+        ],
+        "Thematic_Content": [
+          "heartbreak",
+          "love",
+          "addiction",
+          "infidelity",
+          "regret"
+        ],
+        "Narrative_Structure": [
+          "duet",
+          "confession",
+          "retrospective",
+          "refrain"
+        ],
+        "Lyrical_Style": [
+          "story-song",
+          "confessional",
+          "imagery",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:29:14.341Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "5OdH6kfzNPjyuOSeFDrjNa",
+      "track_name": "Trouble",
+      "artist_name": "Elvis Presley",
+      "selections": {
+        "Emotional_Tone": [
+          "defiant",
+          "menacing",
+          "threatening",
+          "intense"
+        ],
+        "Thematic_Content": [
+          "identity",
+          "violence",
+          "revenge",
+          "survival"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "warning"
+        ],
+        "Lyrical_Style": [
+          "anthem",
+          "repetition",
+          "colloquial-language",
+          "unapologetic-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:30:38.622Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "5FTrzXtDMz3adIbLmVShk4",
+      "track_name": "UKA UKA",
+      "artist_name": "Trippie Redd",
+      "selections": {
+        "Emotional_Tone": [
+          "defiant",
+          "menacing",
+          "threatening",
+          "confident",
+          "intense"
+        ],
+        "Thematic_Content": [
+          "violence",
+          "crime",
+          "money",
+          "survival",
+          "revenge"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "warning",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "slang",
+          "colloquial-language",
+          "unapologetic-language",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:32:14.156Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "6bPGoS02ALRFRroKx0OhYp",
+      "track_name": "CELINE",
+      "artist_name": "Famous Dex",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "defiant",
+          "playful",
+          "triumphant"
+        ],
+        "Thematic_Content": [
+          "wealth",
+          "money",
+          "materialism",
+          "addiction",
+          "lust"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "slang",
+          "colloquial-language",
+          "unapologetic-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:33:33.161Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "621BmpFIPgBU9qdCzCcTMh",
+      "track_name": "No Destination",
+      "artist_name": "The Garden",
+      "selections": {
+        "Emotional_Tone": [
+          "hopeful",
+          "contemplative",
+          "peaceful",
+          "reflective",
+          "optimistic"
+        ],
+        "Thematic_Content": [
+          "escapism",
+          "freedom",
+          "self-discovery",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "vignette",
+          "stream-of-consciousness"
+        ],
+        "Lyrical_Style": [
+          "imagery",
+          "repetition",
+          "dreaminess",
+          "hook",
+          "metaphor"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:34:57.491Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "1d8MhrYEF3fci7yAncAjIm",
+      "track_name": "Hey Sister - Single Version",
+      "artist_name": "Simian Mobile Disco",
+      "selections": {
+        "Emotional_Tone": [
+          "vulnerable",
+          "introspective",
+          "tender",
+          "yearning",
+          "contemplative"
+        ],
+        "Thematic_Content": [
+          "family",
+          "desire",
+          "self-discovery",
+          "identity",
+          "love"
+        ],
+        "Narrative_Structure": [
+          "question",
+          "vignette",
+          "stream-of-consciousness",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "imagery",
+          "dreaminess",
+          "surrealism",
+          "repetition"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:36:50.066Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0cDbVbHEUM419vxXxigLtS",
+      "track_name": "Shine Ya Light",
+      "artist_name": "Rita Ora",
+      "selections": {
+        "Emotional_Tone": [
+          "triumphant",
+          "confident",
+          "optimistic",
+          "upbeat",
+          "hopeful"
+        ],
+        "Thematic_Content": [
+          "success",
+          "resilience",
+          "youth",
+          "fame"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "scene-setting",
+          "resolution"
+        ],
+        "Lyrical_Style": [
+          "anthem",
+          "repetition",
+          "hook",
+          "imagery"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:38:16.918Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0AsXwDIqbjKbmYZI5AoDfG",
+      "track_name": "All I Know",
+      "artist_name": "YFN Lucci",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "defiant",
+          "triumphant",
+          "intense",
+          "restless"
+        ],
+        "Thematic_Content": [
+          "money",
+          "crime",
+          "survival",
+          "violence",
+          "ambition",
+          "success"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "verse-chorus",
+          "scene-setting",
+          "retrospective"
+        ],
+        "Lyrical_Style": [
+          "slang",
+          "colloquial-language",
+          "repetition",
+          "hook",
+          "raw-honesty",
+          "storytelling"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:39:56.067Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "1irXmwdCbngOtucJNd5mSl",
+      "track_name": "Violet City",
+      "artist_name": "Mansionair",
+      "selections": {
+        "Emotional_Tone": [
+          "introspective",
+          "melancholic",
+          "contemplative",
+          "yearning",
+          "vulnerable"
+        ],
+        "Thematic_Content": [
+          "self-discovery",
+          "escapism",
+          "desire",
+          "loneliness",
+          "growing-up"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "vignette",
+          "stream-of-consciousness"
+        ],
+        "Lyrical_Style": [
+          "imagery",
+          "metaphor",
+          "dreaminess",
+          "repetition",
+          "confessional"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:41:28.671Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "1QlbOKYXSCQaexwtvFwRJc",
+      "track_name": "Numb",
+      "artist_name": "Carlie Hanson",
+      "selections": {
+        "Emotional_Tone": [
+          "apathetic",
+          "vulnerable",
+          "melancholic",
+          "contemplative"
+        ],
+        "Thematic_Content": [
+          "loneliness",
+          "heartbreak",
+          "vulnerability",
+          "self-discovery"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "confession",
+          "refrain",
+          "resolution"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "confessional",
+          "colloquial-language",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:42:34.984Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "6rxwRAxSeBaPEILEkkdyso",
+      "track_name": "More of Your Love (feat. Ne-Yo)",
+      "artist_name": "Eric Bellinger",
+      "selections": {
+        "Emotional_Tone": [
+          "seductive",
+          "playful",
+          "confident",
+          "yearning",
+          "vulnerable"
+        ],
+        "Thematic_Content": [
+          "desire",
+          "sex",
+          "hedonism",
+          "love"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "vignette"
+        ],
+        "Lyrical_Style": [
+          "hook",
+          "repetition",
+          "colloquial-language",
+          "slang",
+          "unapologetic-language"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:44:00.255Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0L9HbWCQCbuo3OhNjffrxn",
+      "track_name": "That's Mine (feat. Ledri Vula)",
+      "artist_name": "GASHI",
+      "selections": {
+        "Emotional_Tone": [
+          "tender",
+          "romantic",
+          "vulnerable",
+          "hopeful"
+        ],
+        "Thematic_Content": [
+          "love",
+          "loyalty",
+          "vulnerability"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "confession",
+          "monologue"
+        ],
+        "Lyrical_Style": [
+          "hook",
+          "repetition",
+          "colloquial-language",
+          "confessional"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:45:13.894Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "0M3lOK4mVuEJas4BOz9Krs",
+      "track_name": "It Is What It Is",
+      "artist_name": "Derek Minor",
+      "selections": {
+        "Emotional_Tone": [
+          "cynical",
+          "defiant",
+          "somber",
+          "introspective",
+          "resentful"
+        ],
+        "Thematic_Content": [
+          "poverty",
+          "survival",
+          "violence",
+          "inequality",
+          "politics",
+          "oppression"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "scene-setting",
+          "vignette",
+          "refrain",
+          "confession"
+        ],
+        "Lyrical_Style": [
+          "storytelling",
+          "raw-honesty",
+          "colloquial-language",
+          "rhetoric",
+          "imagery"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:47:33.751Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "464Vr4ZWeMHe757BMjBNeA",
+      "track_name": "Rockstar (feat. Yung Tory)",
+      "artist_name": "Young Chop",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "defiant",
+          "triumphant",
+          "playful",
+          "seductive"
+        ],
+        "Thematic_Content": [
+          "wealth",
+          "fame",
+          "hedonism",
+          "sex",
+          "addiction",
+          "violence"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "anthem",
+          "repetition",
+          "hook",
+          "slang",
+          "colloquial-language",
+          "unapologetic-language",
+          "raw-honesty",
+          "wordplay"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:49:44.715Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "2XlpvjRevoDFjTHb9fvVre",
+      "track_name": "Land of Hope and Dreams - Springsteen on Broadway",
+      "artist_name": "Bruce Springsteen",
+      "selections": {
+        "Emotional_Tone": [
+          "hopeful",
+          "triumphant",
+          "optimistic",
+          "peaceful",
+          "soulful"
+        ],
+        "Thematic_Content": [
+          "freedom",
+          "redemption",
+          "salvation",
+          "resilience",
+          "liberation"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "scene-setting",
+          "resolution"
+        ],
+        "Lyrical_Style": [
+          "hymn",
+          "anthem",
+          "imagery",
+          "storytelling",
+          "repetition",
+          "hook"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:52:19.907Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4ff5go862jhD4YjBw1Elmg",
+      "track_name": "Girl of the Year",
+      "artist_name": "Allie X",
+      "selections": {
+        "Emotional_Tone": [
+          "confident",
+          "playful",
+          "vulnerable",
+          "wistful",
+          "sardonic"
+        ],
+        "Thematic_Content": [
+          "identity",
+          "love",
+          "youth",
+          "self-discovery"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "verse-chorus",
+          "monologue",
+          "confession",
+          "vignette"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "confessional",
+          "colloquial-language",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:53:51.143Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "6IgLdbp4k0Zcp7JSQAoHUj",
+      "track_name": "The Best Ones Lie",
+      "artist_name": "Disturbed",
+      "selections": {
+        "Emotional_Tone": [
+          "anxious",
+          "fearful",
+          "cynical",
+          "tormented"
+        ],
+        "Thematic_Content": [
+          "truth",
+          "politics",
+          "mortality",
+          "grief"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "monologue",
+          "question",
+          "verse-chorus"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "rhetoric",
+          "rhetorical-question",
+          "raw-honesty",
+          "sarcasm"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:55:12.635Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "5acLoFKS0OJqfEYx0PzRkZ",
+      "track_name": "Heavy Hearts",
+      "artist_name": "Floods",
+      "selections": {
+        "Emotional_Tone": [
+          "melancholic",
+          "vulnerable",
+          "contemplative",
+          "introspective",
+          "yearning"
+        ],
+        "Thematic_Content": [
+          "mental-health",
+          "loneliness",
+          "self-discovery",
+          "vulnerability"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "monologue",
+          "confession",
+          "vignette"
+        ],
+        "Lyrical_Style": [
+          "confessional",
+          "repetition",
+          "imagery",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:56:32.602Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "79MRWFDPHHPaaiohbBN7iF",
+      "track_name": "Softly - Mahogany Sessions",
+      "artist_name": "Rhye",
+      "selections": {
+        "Emotional_Tone": [
+          "tender",
+          "vulnerable",
+          "yearning",
+          "contemplative"
+        ],
+        "Thematic_Content": [
+          "love",
+          "desire",
+          "vulnerability"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "question",
+          "monologue",
+          "vignette"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "confessional",
+          "imagery",
+          "dreaminess"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:57:36.712Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "78GAT649ad19quwcuiuMQs",
+      "track_name": "Dear God - Recorded at Woodshed Recording Malibu",
+      "artist_name": "Hunter Hayes",
+      "selections": {
+        "Emotional_Tone": [
+          "vulnerable",
+          "tormented",
+          "desperate",
+          "contemplative",
+          "remorseful"
+        ],
+        "Thematic_Content": [
+          "religion",
+          "mental-health",
+          "guilt",
+          "grief",
+          "vulnerability"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "confession",
+          "question",
+          "catharsis",
+          "refrain"
+        ],
+        "Lyrical_Style": [
+          "confessional",
+          "rhetorical-question",
+          "raw-honesty",
+          "repetition",
+          "imagery"
+        ]
+      },
+      "annotated_at": "2025-09-17T19:59:15.005Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "4BQQNiMgBcgtiGBLbWy15P",
+      "track_name": "Bussdown",
+      "artist_name": "Maxo Kream",
+      "selections": {
+        "Emotional_Tone": [
+          "menacing",
+          "defiant",
+          "threatening",
+          "intense",
+          "confident"
+        ],
+        "Thematic_Content": [
+          "crime",
+          "violence",
+          "money",
+          "survival"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "warning",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "colloquial-language",
+          "raw-honesty",
+          "unapologetic-language",
+          "hook"
+        ]
+      },
+      "annotated_at": "2025-09-17T20:00:24.350Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "6yFdWNSS4VV5vYf66mNCAj",
+      "track_name": "2 Easy - Give Up",
+      "artist_name": "LUCKI",
+      "selections": {
+        "Emotional_Tone": [
+          "vulnerable",
+          "apathetic",
+          "restless"
+        ],
+        "Thematic_Content": [
+          "love",
+          "heartbreak",
+          "desire",
+          "addiction",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "monologue",
+          "confession"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "colloquial-language",
+          "slang",
+          "confessional",
+          "raw-honesty"
+        ]
+      },
+      "annotated_at": "2025-09-17T20:01:37.240Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "71MSp7Tk1BFyVnHgLyLydJ",
+      "track_name": "Deal With the Devil",
+      "artist_name": "Winger",
+      "selections": {
+        "Emotional_Tone": [
+          "defiant",
+          "triumphant",
+          "intense",
+          "menacing",
+          "passionate"
+        ],
+        "Thematic_Content": [
+          "fame",
+          "hedonism",
+          "sex",
+          "wealth",
+          "ambition",
+          "success"
+        ],
+        "Narrative_Structure": [
+          "monologue",
+          "refrain",
+          "confession",
+          "rise-and-fall"
+        ],
+        "Lyrical_Style": [
+          "story-song",
+          "metaphor",
+          "imagery",
+          "repetition",
+          "hook",
+          "anthem"
+        ]
+      },
+      "annotated_at": "2025-09-17T20:03:06.325Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    },
+    {
+      "track_id": "3ANOLlFFoNo3yNaxpBARV3",
+      "track_name": "Velvet Paradise",
+      "artist_name": "Jauz",
+      "selections": {
+        "Emotional_Tone": [
+          "hopeful",
+          "peaceful",
+          "wistful",
+          "yearning"
+        ],
+        "Thematic_Content": [
+          "escapism",
+          "freedom",
+          "youth"
+        ],
+        "Narrative_Structure": [
+          "refrain",
+          "vignette",
+          "scene-setting"
+        ],
+        "Lyrical_Style": [
+          "repetition",
+          "hook",
+          "imagery",
+          "dreaminess"
+        ]
+      },
+      "annotated_at": "2025-09-17T20:04:05.562Z",
+      "session_id": "session-1758134236755-achyxgtno"
+    }
+  ],
+  "assigned_tracks": [
+    {
+      "track_id": "1cClWZf6Y52TCufreJGrww",
+      "track_name": "Fed Baby’s",
+      "artist_name": "Moneybagg Yo"
+    },
+    {
+      "track_id": "14WmnmH9lYxJJFYJsInynI",
+      "track_name": "Brave Surrender - Live",
+      "artist_name": "Kim Walker-Smith"
+    },
+    {
+      "track_id": "5fK0Q3j2iUcQtiRDXlPW0K",
+      "track_name": "Want To",
+      "artist_name": "Dua Lipa"
+    },
+    {
+      "track_id": "12d0oildmCSVKRW7SEHaZP",
+      "track_name": "Bad Ideas",
+      "artist_name": "Tessa Violet"
+    },
+    {
+      "track_id": "4RaYjBnhMaDf0pnZgqh9yr",
+      "track_name": "Teufelsreich",
+      "artist_name": "Watain"
+    },
+    {
+      "track_id": "0UWcwPvb17DgzoAiS32Ldw",
+      "track_name": "Young, Rich & Black",
+      "artist_name": "DDG"
+    },
+    {
+      "track_id": "2EPGlTyGYXA7WpSiXNIJSg",
+      "track_name": "DON'T LOOK BACK",
+      "artist_name": "Luke Christopher"
+    },
+    {
+      "track_id": "63MtMwfhxUvM2cyUNb5Iux",
+      "track_name": "First Time",
+      "artist_name": "Liam Payne"
+    },
+    {
+      "track_id": "79iLSTbR8wgSVoKAnJtm8j",
+      "track_name": "Tell Me",
+      "artist_name": "Fredo"
+    },
+    {
+      "track_id": "6twcrte6VIOBntlPeNk9nw",
+      "track_name": "Love On The Brain",
+      "artist_name": "Amaia Romero"
+    },
+    {
+      "track_id": "0ZWvo02qugJAKf2HjdD4fT",
+      "track_name": "BUBA",
+      "artist_name": "6ix9ine"
+    },
+    {
+      "track_id": "4oh9w5Ir4OnmQoN9ikRlxF",
+      "track_name": "Up in Smoke",
+      "artist_name": "Thompson Square"
+    },
+    {
+      "track_id": "3CAqgqqx023Rff8tCQtsBz",
+      "track_name": "Big Mood",
+      "artist_name": "Mike Stud"
+    },
+    {
+      "track_id": "0Ez18vMiXHlDks9ZseQZfJ",
+      "track_name": "This Summer",
+      "artist_name": "Maroon 5"
+    },
+    {
+      "track_id": "38Vjqr7xTeIzDpclKOkzli",
+      "track_name": "YUSO",
+      "artist_name": "Kid Ink"
+    },
+    {
+      "track_id": "4nHV7YyK8KruEtie7JZVpJ",
+      "track_name": "Red Shoes - from the Dumplin' Original Motion Picture Soundtrack",
+      "artist_name": "Dolly Parton"
+    },
+    {
+      "track_id": "60j0tXalnpq8iWnh4RyaSQ",
+      "track_name": "No Fooling Me",
+      "artist_name": "Ward Thomas"
+    },
+    {
+      "track_id": "3IRlRg7tB9oturrFYObri5",
+      "track_name": "Red Letters - Southern-Style Edit",
+      "artist_name": "Crowder"
+    },
+    {
+      "track_id": "3ggvoFaWTbh3ZfOg05vrh0",
+      "track_name": "Yours",
+      "artist_name": "Alina Baraz"
+    },
+    {
+      "track_id": "4LtufGlc9o8QtbFTp4Q37m",
+      "track_name": "Catastrophize",
+      "artist_name": "Noah Kahan"
+    },
+    {
+      "track_id": "4ptonNXwbPtpiPX062ruaM",
+      "track_name": "Havana - No Rap Version",
+      "artist_name": "Camila Cabello"
+    },
+    {
+      "track_id": "3pOhcQHAz18zAPWU3S2CsR",
+      "track_name": "Mirror",
+      "artist_name": "IDER"
+    },
+    {
+      "track_id": "0Q8A7MPsoFg72xcVFBsS8Q",
+      "track_name": "LOGOUT",
+      "artist_name": "Saba"
+    },
+    {
+      "track_id": "2s7rDOGTmW95PYlF8QgNwV",
+      "track_name": "For You My Love",
+      "artist_name": "BUNT."
+    },
+    {
+      "track_id": "0bRgiiAzR0NXeWLieb27MJ",
+      "track_name": "Hot Damn",
+      "artist_name": "Blimes"
+    },
+    {
+      "track_id": "3kosv2SiE01oo3QxTDJUtb",
+      "track_name": "BOOM",
+      "artist_name": "X Ambassadors"
+    },
+    {
+      "track_id": "6Lxk3g1cFvHHfYkBh9oNkQ",
+      "track_name": "Picture (feat. Sheryl Crow)",
+      "artist_name": "Kid Rock"
+    },
+    {
+      "track_id": "5OdH6kfzNPjyuOSeFDrjNa",
+      "track_name": "Trouble",
+      "artist_name": "Elvis Presley"
+    },
+    {
+      "track_id": "5FTrzXtDMz3adIbLmVShk4",
+      "track_name": "UKA UKA",
+      "artist_name": "Trippie Redd"
+    },
+    {
+      "track_id": "6bPGoS02ALRFRroKx0OhYp",
+      "track_name": "CELINE",
+      "artist_name": "Famous Dex"
+    },
+    {
+      "track_id": "621BmpFIPgBU9qdCzCcTMh",
+      "track_name": "No Destination",
+      "artist_name": "The Garden"
+    },
+    {
+      "track_id": "1d8MhrYEF3fci7yAncAjIm",
+      "track_name": "Hey Sister - Single Version",
+      "artist_name": "Simian Mobile Disco"
+    },
+    {
+      "track_id": "0cDbVbHEUM419vxXxigLtS",
+      "track_name": "Shine Ya Light",
+      "artist_name": "Rita Ora"
+    },
+    {
+      "track_id": "0AsXwDIqbjKbmYZI5AoDfG",
+      "track_name": "All I Know",
+      "artist_name": "YFN Lucci"
+    },
+    {
+      "track_id": "1irXmwdCbngOtucJNd5mSl",
+      "track_name": "Violet City",
+      "artist_name": "Mansionair"
+    },
+    {
+      "track_id": "1QlbOKYXSCQaexwtvFwRJc",
+      "track_name": "Numb",
+      "artist_name": "Carlie Hanson"
+    },
+    {
+      "track_id": "6rxwRAxSeBaPEILEkkdyso",
+      "track_name": "More of Your Love (feat. Ne-Yo)",
+      "artist_name": "Eric Bellinger"
+    },
+    {
+      "track_id": "0L9HbWCQCbuo3OhNjffrxn",
+      "track_name": "That's Mine (feat. Ledri Vula)",
+      "artist_name": "GASHI"
+    },
+    {
+      "track_id": "0M3lOK4mVuEJas4BOz9Krs",
+      "track_name": "It Is What It Is",
+      "artist_name": "Derek Minor"
+    },
+    {
+      "track_id": "464Vr4ZWeMHe757BMjBNeA",
+      "track_name": "Rockstar (feat. Yung Tory)",
+      "artist_name": "Young Chop"
+    },
+    {
+      "track_id": "2XlpvjRevoDFjTHb9fvVre",
+      "track_name": "Land of Hope and Dreams - Springsteen on Broadway",
+      "artist_name": "Bruce Springsteen"
+    },
+    {
+      "track_id": "4ff5go862jhD4YjBw1Elmg",
+      "track_name": "Girl of the Year",
+      "artist_name": "Allie X"
+    },
+    {
+      "track_id": "6IgLdbp4k0Zcp7JSQAoHUj",
+      "track_name": "The Best Ones Lie",
+      "artist_name": "Disturbed"
+    },
+    {
+      "track_id": "5acLoFKS0OJqfEYx0PzRkZ",
+      "track_name": "Heavy Hearts",
+      "artist_name": "Floods"
+    },
+    {
+      "track_id": "79MRWFDPHHPaaiohbBN7iF",
+      "track_name": "Softly - Mahogany Sessions",
+      "artist_name": "Rhye"
+    },
+    {
+      "track_id": "78GAT649ad19quwcuiuMQs",
+      "track_name": "Dear God - Recorded at Woodshed Recording Malibu",
+      "artist_name": "Hunter Hayes"
+    },
+    {
+      "track_id": "4BQQNiMgBcgtiGBLbWy15P",
+      "track_name": "Bussdown",
+      "artist_name": "Maxo Kream"
+    },
+    {
+      "track_id": "6yFdWNSS4VV5vYf66mNCAj",
+      "track_name": "2 Easy - Give Up",
+      "artist_name": "LUCKI"
+    },
+    {
+      "track_id": "71MSp7Tk1BFyVnHgLyLydJ",
+      "track_name": "Deal With the Devil",
+      "artist_name": "Winger"
+    },
+    {
+      "track_id": "3ANOLlFFoNo3yNaxpBARV3",
+      "track_name": "Velvet Paradise",
+      "artist_name": "Jauz"
+    }
+  ]
+}

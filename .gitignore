@@ -12,3 +12,4 @@ __pycache__/
 build/
 deleted/
 .vscode/
+analysis/human_evaluation/summaries/used_in_report/

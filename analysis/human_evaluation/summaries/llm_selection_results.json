@@ -1,0 +1,470 @@
+{
+  "models": {
+    "deepseek-v3p1": {
+      "tracks_evaluated": 50,
+      "per_facet": {
+        "Emotional_Tone": {
+          "macro": {
+            "precision": 0.3213,
+            "recall": 0.246,
+            "f1": 0.2771,
+            "jaccard": 0.1749,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.3242,
+            "recall": 0.2469,
+            "f1": 0.2803,
+            "jaccard": 0.163
+          }
+        },
+        "Thematic_Content": {
+          "macro": {
+            "precision": 0.3093,
+            "recall": 0.255,
+            "f1": 0.2769,
+            "jaccard": 0.1763,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.3138,
+            "recall": 0.2576,
+            "f1": 0.283,
+            "jaccard": 0.1648
+          }
+        },
+        "Narrative_Structure": {
+          "macro": {
+            "precision": 0.005,
+            "recall": 0.005,
+            "f1": 0.005,
+            "jaccard": 0.0029,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0064,
+            "recall": 0.005,
+            "f1": 0.0056,
+            "jaccard": 0.0028
+          }
+        },
+        "Lyrical_Style": {
+          "macro": {
+            "precision": 0.2433,
+            "recall": 0.1687,
+            "f1": 0.1969,
+            "jaccard": 0.1201,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.244,
+            "recall": 0.1602,
+            "f1": 0.1934,
+            "jaccard": 0.107
+          }
+        }
+      },
+      "overall": {
+        "micro_precision": 0.2302,
+        "micro_recall": 0.1733,
+        "overall_micro_f1": 0.1978,
+        "overall_jaccard": 0.1097,
+        "overall_macro_f1": 0.189
+      },
+      "source_file": "analysis/llm_selection_p1/final_tags/eval_tags_deepseek-v3p1.json"
+    },
+    "glm-4p5": {
+      "tracks_evaluated": 50,
+      "per_facet": {
+        "Emotional_Tone": {
+          "macro": {
+            "precision": 0.3053,
+            "recall": 0.238,
+            "f1": 0.2666,
+            "jaccard": 0.1702,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.3032,
+            "recall": 0.2385,
+            "f1": 0.267,
+            "jaccard": 0.1541
+          }
+        },
+        "Thematic_Content": {
+          "macro": {
+            "precision": 0.255,
+            "recall": 0.2403,
+            "f1": 0.2453,
+            "jaccard": 0.1574,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.2535,
+            "recall": 0.2358,
+            "f1": 0.2443,
+            "jaccard": 0.1392
+          }
+        },
+        "Narrative_Structure": {
+          "macro": {
+            "precision": 0.0167,
+            "recall": 0.015,
+            "f1": 0.0157,
+            "jaccard": 0.009,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0168,
+            "recall": 0.0151,
+            "f1": 0.0159,
+            "jaccard": 0.008
+          }
+        },
+        "Lyrical_Style": {
+          "macro": {
+            "precision": 0.029,
+            "recall": 0.0273,
+            "f1": 0.0281,
+            "jaccard": 0.0169,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0316,
+            "recall": 0.0234,
+            "f1": 0.0269,
+            "jaccard": 0.0136
+          }
+        }
+      },
+      "overall": {
+        "micro_precision": 0.1558,
+        "micro_recall": 0.13,
+        "overall_micro_f1": 0.1418,
+        "overall_jaccard": 0.0763,
+        "overall_macro_f1": 0.1389
+      },
+      "source_file": "analysis/llm_selection_p1/final_tags/eval_tags_glm-4p5.json"
+    },
+    "llama-v3p1-70b-instruct": {
+      "tracks_evaluated": 50,
+      "per_facet": {
+        "Emotional_Tone": {
+          "macro": {
+            "precision": 0.2997,
+            "recall": 0.243,
+            "f1": 0.2667,
+            "jaccard": 0.1667,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.3026,
+            "recall": 0.2469,
+            "f1": 0.2719,
+            "jaccard": 0.1573
+          }
+        },
+        "Thematic_Content": {
+          "macro": {
+            "precision": 0.349,
+            "recall": 0.3077,
+            "f1": 0.3227,
+            "jaccard": 0.2115,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.352,
+            "recall": 0.3013,
+            "f1": 0.3247,
+            "jaccard": 0.1938
+          }
+        },
+        "Narrative_Structure": {
+          "macro": {
+            "precision": 0.0423,
+            "recall": 0.0317,
+            "f1": 0.0348,
+            "jaccard": 0.0204,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0343,
+            "recall": 0.0302,
+            "f1": 0.0321,
+            "jaccard": 0.0163
+          }
+        },
+        "Lyrical_Style": {
+          "macro": {
+            "precision": 0.0547,
+            "recall": 0.0417,
+            "f1": 0.0468,
+            "jaccard": 0.0275,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0558,
+            "recall": 0.043,
+            "f1": 0.0486,
+            "jaccard": 0.0249
+          }
+        }
+      },
+      "overall": {
+        "micro_precision": 0.19,
+        "micro_recall": 0.1571,
+        "overall_micro_f1": 0.172,
+        "overall_jaccard": 0.0941,
+        "overall_macro_f1": 0.1677
+      },
+      "source_file": "analysis/llm_selection_p1/final_tags/eval_tags_llama-v3p1-70b-instruct.json"
+    },
+    "llama-v3p1-8b-instruct": {
+      "tracks_evaluated": 50,
+      "per_facet": {
+        "Emotional_Tone": {
+          "macro": {
+            "precision": 0.144,
+            "recall": 0.152,
+            "f1": 0.1476,
+            "jaccard": 0.0883,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.1463,
+            "recall": 0.1506,
+            "f1": 0.1485,
+            "jaccard": 0.0802
+          }
+        },
+        "Thematic_Content": {
+          "macro": {
+            "precision": 0.232,
+            "recall": 0.264,
+            "f1": 0.2447,
+            "jaccard": 0.1505,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.2358,
+            "recall": 0.2533,
+            "f1": 0.2442,
+            "jaccard": 0.1391
+          }
+        },
+        "Narrative_Structure": {
+          "macro": {
+            "precision": 0.108,
+            "recall": 0.1333,
+            "f1": 0.1189,
+            "jaccard": 0.069,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.1098,
+            "recall": 0.1357,
+            "f1": 0.1213,
+            "jaccard": 0.0646
+          }
+        },
+        "Lyrical_Style": {
+          "macro": {
+            "precision": 0.068,
+            "recall": 0.071,
+            "f1": 0.0691,
+            "jaccard": 0.0391,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0691,
+            "recall": 0.0664,
+            "f1": 0.0677,
+            "jaccard": 0.0351
+          }
+        }
+      },
+      "overall": {
+        "micro_precision": 0.1402,
+        "micro_recall": 0.1495,
+        "overall_micro_f1": 0.1447,
+        "overall_jaccard": 0.078,
+        "overall_macro_f1": 0.1451
+      },
+      "source_file": "analysis/llm_selection_p1/final_tags/eval_tags_llama-v3p1-8b-instruct.json"
+    },
+    "llama-v3p3-70b-instruct": {
+      "tracks_evaluated": 50,
+      "per_facet": {
+        "Emotional_Tone": {
+          "macro": {
+            "precision": 0.27,
+            "recall": 0.188,
+            "f1": 0.2206,
+            "jaccard": 0.1333,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.2659,
+            "recall": 0.1925,
+            "f1": 0.2233,
+            "jaccard": 0.1257
+          }
+        },
+        "Thematic_Content": {
+          "macro": {
+            "precision": 0.3883,
+            "recall": 0.302,
+            "f1": 0.3359,
+            "jaccard": 0.2169,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.3873,
+            "recall": 0.2926,
+            "f1": 0.3333,
+            "jaccard": 0.2
+          }
+        },
+        "Narrative_Structure": {
+          "macro": {
+            "precision": 0.0067,
+            "recall": 0.005,
+            "f1": 0.0057,
+            "jaccard": 0.0033,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0061,
+            "recall": 0.005,
+            "f1": 0.0055,
+            "jaccard": 0.0028
+          }
+        },
+        "Lyrical_Style": {
+          "macro": {
+            "precision": 0.0483,
+            "recall": 0.037,
+            "f1": 0.0413,
+            "jaccard": 0.0243,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.052,
+            "recall": 0.0352,
+            "f1": 0.042,
+            "jaccard": 0.0214
+          }
+        }
+      },
+      "overall": {
+        "micro_precision": 0.1801,
+        "micro_recall": 0.1333,
+        "overall_micro_f1": 0.1532,
+        "overall_jaccard": 0.0829,
+        "overall_macro_f1": 0.1509
+      },
+      "source_file": "analysis/llm_selection_p1/final_tags/eval_tags_llama-v3p3-70b-instruct.json"
+    },
+    "mixtral-8x22b-instruct": {
+      "tracks_evaluated": 50,
+      "per_facet": {
+        "Emotional_Tone": {
+          "macro": {
+            "precision": 0.1767,
+            "recall": 0.165,
+            "f1": 0.1692,
+            "jaccard": 0.1015,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.1681,
+            "recall": 0.1674,
+            "f1": 0.1677,
+            "jaccard": 0.0915
+          }
+        },
+        "Thematic_Content": {
+          "macro": {
+            "precision": 0.216,
+            "recall": 0.232,
+            "f1": 0.2202,
+            "jaccard": 0.1375,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.2125,
+            "recall": 0.2227,
+            "f1": 0.2175,
+            "jaccard": 0.122
+          }
+        },
+        "Narrative_Structure": {
+          "macro": {
+            "precision": 0.061,
+            "recall": 0.078,
+            "f1": 0.0679,
+            "jaccard": 0.039,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.0664,
+            "recall": 0.0754,
+            "f1": 0.0706,
+            "jaccard": 0.0366
+          }
+        },
+        "Lyrical_Style": {
+          "macro": {
+            "precision": 0.112,
+            "recall": 0.0985,
+            "f1": 0.1031,
+            "jaccard": 0.0626,
+            "tracks": 50
+          },
+          "micro": {
+            "precision": 0.1111,
+            "recall": 0.1016,
+            "f1": 0.1061,
+            "jaccard": 0.056
+          }
+        }
+      },
+      "overall": {
+        "micro_precision": 0.1407,
+        "micro_recall": 0.143,
+        "overall_micro_f1": 0.1419,
+        "overall_jaccard": 0.0763,
+        "overall_macro_f1": 0.1401
+      },
+      "source_file": "analysis/llm_selection_p1/final_tags/eval_tags_mixtral-8x22b-instruct.json"
+    }
+  },
+  "ranking": [
+    {
+      "model": "deepseek-v3p1",
+      "overall_micro_f1": 0.1978
+    },
+    {
+      "model": "llama-v3p1-70b-instruct",
+      "overall_micro_f1": 0.172
+    },
+    {
+      "model": "llama-v3p3-70b-instruct",
+      "overall_micro_f1": 0.1532
+    },
+    {
+      "model": "llama-v3p1-8b-instruct",
+      "overall_micro_f1": 0.1447
+    },
+    {
+      "model": "mixtral-8x22b-instruct",
+      "overall_micro_f1": 0.1419
+    },
+    {
+      "model": "glm-4p5",
+      "overall_micro_f1": 0.1418
+    }
+  ],
+  "best_model": "deepseek-v3p1",
+  "assets_dir": "analysis/human_evaluation/summaries/assets"
+}

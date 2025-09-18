@@ -15,41 +15,43 @@ While contemporary music recommendation systems rely heavily on collaborative fi
 You will be asked to listen to and tag 50 music tracks. For each track:
 
 1. **Review the track information and lyrics** displayed on screen
-2. **Listen to the complete track** on Spotify (a link will open automatically)
-3. **Apply tags** in four categories:
+2. **Apply tags** in four categories:
 
-   - **Emotional Tone**: The feelings or emotions expressed in the music (e.g., Joy, Sadness, Nostalgia)
-   - **Thematic Content**: The subject matter or topics addressed (e.g., Love, Heartbreak, Success)
-   - **Narrative Structure**: How the song tells its story (e.g., First Person, Narrative_Yes)
-   - **Lyrical Style**: The literary techniques used (e.g., Metaphor, Repetition, Vivid\*Imagery)
-     <br><br>
-     _You may select multiple tags within a facet if they are clearly supported by the lyrics. Use None only when no listed tags in that facet apply._
+   - **Emotional Tone**: adjectives describing affect/mood.
+   - **Thematic Content**: nouns/compound nouns capturing subject matter.
+   - **Narrative Structure**: nouns/compound nouns describing story/structure devices.
+   - **Lyrical Style**: nouns/compound nouns for poetic/linguistic style.
 
 ## Important Guidelines
 
 ### Take Your Time
 
 - There is no time limit for this study
-- Prioritize textual evidence in lyrics. Use audio cues (performance, timbre) only to disambiguate when lyrics are ambiguous.
-- You can take breaks between tracks whenever needed
-- Your progress is automatically saved after each track
+- You can take breaks between tracks whenever needed.
+- Your progress is automatically saved.
 
 ### Use Your Expertise
 
-- Apply your professional knowledge and experience
-- Consider both obvious and subtle elements within each song
-- If you're uncertain about a tag, you can access definitions in the program
+- Apply your professional knowledge and experience.
+- Prioritize textual evidence in lyrics.
+- Stay within the list: select only from the available canonical tags.
+- Consider both obvious and subtle elements within each song.
+- Plain over obscure: prefer broadly understandable choices.
+- If you're uncertain about a tag, you can access definitions in the program.
 - Trust your intuition – your expert judgment is what we're seeking
 - Remember that the goal is to identify the emotional resonance and narrative aspects that might connect with different user contexts
-- Do not use music videos, artist bios, or external websites. Judge only from the provided lyrics/audio
+- Do not use music videos, artist bios, or external websites. Judge only from the provided lyrics.
 
 ### Be Consistent
 
 - Try to apply tags consistently across all tracks
 - Use the "None" tag only when no other tags in that category apply
 - If you make a mistake, you can retry tagging a track
-- Use the confidence scoring to indicate your certainty about each tag
-- Rate confidence 1–10 (low→high)
+- Affect vs. theme vs. style:
+  - If it’s primarily a feeling, tag it in Emotional_Tone.
+  - If it names a topic/concept, tag it in Thematic_Content.
+  - If it’s about story shape/devices, use Narrative_Structure.
+  - If it’s a poetic/linguistic device or delivery style, use Lyrical_Style.
 
 ## Confidentiality and Recognition
 
@@ -62,12 +64,6 @@ If you encounter any technical issues or have questions about the tagging proces
 - **Research Lead**: Druhin Tarafder
 - **Email**: dt158@student.london.ac.uk
 - **Project Repository**: [ResoNote](https://github.com/Druhin13/ResoNote)
-
-## Getting Started
-
-The tagging program will guide you through each step of the process. You'll begin by entering your name, occupation, and music expertise information. The system will then lead you through the tagging process for each track.
-
-Remember that you can pause at any time, and your progress will be saved automatically.
 
 ## Research Impact
 
