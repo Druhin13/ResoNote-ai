@@ -1,0 +1,18 @@
+{
+  "model": "accounts/fireworks/models/deepseek-v3p1",
+  "variant": "CanonicalRetagWithProbs_consistent",
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_tokens": 256,
+  "input_token_budget": 4500,
+  "output_token_budget": 256,
+  "timeout_s": 120,
+  "total_input_tracks": 23133,
+  "outputs_jsonl": "dataset/re_tagged/deepseek-v3p1/full_retag.jsonl",
+  "truncated_contexts": 0,
+  "failures": 0,
+  "failed_track_ids": [],
+  "latency_avg_s": 4.13,
+  "input_tokens_avg": 1134.7,
+  "output_tokens_avg": 230.4
+}
