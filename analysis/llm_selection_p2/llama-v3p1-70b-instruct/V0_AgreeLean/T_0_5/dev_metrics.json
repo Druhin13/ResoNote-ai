@@ -1,0 +1,30 @@
+{
+  "model": "llama-v3p1-70b-instruct",
+  "variant": "V0_AgreeLean",
+  "temperature": 0.5,
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "coverage_rate": 1.0,
+    "latency_p50_s": 3.834,
+    "latency_p95_s": 4.919,
+    "input_tokens_avg": 962.2,
+    "output_tokens_avg": 413.4,
+    "avg_agree_per_track": 11.78,
+    "avg_disagree_per_track": 2.68,
+    "agree_rate": 0.8147,
+    "agree_conf_avg": 0.812,
+    "disagree_conf_avg": 0.335,
+    "truncated_fraction": 0.0,
+    "cap_hit_fraction": 0.0,
+    "avg_parsed_fraction": 0.9971,
+    "autofill_rate_overall": 0.0028,
+    "autofill_rate_by_facet": {
+      "Emotional_Tone": 0.0,
+      "Thematic_Content": 0.0052,
+      "Narrative_Structure": 0.0,
+      "Lyrical_Style": 0.0055
+    },
+    "total_tracks": 50,
+    "ok_tracks": 50
+  }
+}

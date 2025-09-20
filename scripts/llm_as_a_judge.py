@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+llm-as-a-judge.py
+"""
+
 import os
 import re
 import json
@@ -10,12 +14,15 @@ from pathlib import Path
 from typing import List, Dict, Any, Tuple
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
 from dotenv import load_dotenv
 from fireworks import LLM
 from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 from rich.progress import Progress, BarColumn, TextColumn, TimeElapsedColumn, TimeRemainingColumn, MofNCompleteColumn, SpinnerColumn
+
+# -------------------- setup --------------------
 
 console = Console()
 load_dotenv()
@@ -64,8 +71,10 @@ def estimate_tokens(text: str, tokenizer) -> int:
 def now_ms():
     return int(time.time() * 1000)
 
-def load_dev_tracks(dev_path: Path) -> List[Dict[str, Any]]:
-    return json.loads(dev_path.read_text(encoding="utf-8"))
+# -------------------- data IO --------------------
+
+def load_tracks(path: Path) -> List[Dict[str, Any]]:
+    return json.loads(path.read_text(encoding="utf-8"))
 
 def load_all_tags_jsonl(jsonl_path: Path) -> Dict[str, Dict[str, List[str]]]:
     by_id: Dict[str, Dict[str, List[str]]] = {}
@@ -88,8 +97,11 @@ def load_canonical(path: Path) -> Dict[str, set]:
         out[k] = set([str(x).strip() for x in obj.get(k, []) if isinstance(x, str) and x.strip()])
     return out
 
-def format_candidate_block(cand: Dict[str, List[str]]) -> str:
-    return json.dumps({k: cand.get(k, []) for k in FACET_KEYS}, ensure_ascii=False, separators=(",", ":"))
+def save_json(path: Path, obj: Any):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
+
+# -------------------- bucketing (for sanity prints) --------------------
 
 def bin_valence(x):
     if x is None:
@@ -121,7 +133,7 @@ def bin_energy(e):
 def combo_key(t):
     return f"{bin_valence(t.get('valence'))}|{bin_popularity(t.get('popularity'))}|{bin_energy(t.get('energy'))}"
 
-# ---------- TSV protocol (parameterized) ----------
+# -------------------- TSV protocol --------------------
 
 def make_tsv_spec(reason_chars: int) -> str:
     return (
@@ -181,6 +193,9 @@ def truncate_reason(s: Any, maxlen: int) -> str:
         return s
     return s[:maxlen]
 
+def format_candidate_block(cand: Dict[str, List[str]]) -> str:
+    return json.dumps({k: cand.get(k, []) for k in FACET_KEYS}, ensure_ascii=False, separators=(",", ":"))
+
 def build_pairs(candidates: Dict[str, List[str]]) -> List[Tuple[str, str]]:
     pairs = []
     for facet in FACET_KEYS:
@@ -189,10 +204,6 @@ def build_pairs(candidates: Dict[str, List[str]]) -> List[Tuple[str, str]]:
     return pairs
 
 def normalize_from_tsv(tsv_text: str, candidates: Dict[str, List[str]], canonical: Dict[str, set], reason_chars: int) -> Tuple[Dict[str, Any], float]:
-    """
-    Returns (normalized_json, parsed_fraction).
-    parsed_fraction = (#pairs we parsed and placed) / (total expected pairs)
-    """
     expected_pairs = build_pairs(candidates)
     idx = {(facet, tag): i for i, (facet, tag) in enumerate(expected_pairs)}
     placed = [False] * len(expected_pairs)
@@ -232,27 +243,25 @@ def normalize_from_tsv(tsv_text: str, candidates: Dict[str, List[str]], canonica
     out = {"decisions": records, "meta": {"version": "p2.tsv.v2"}}
     return out, parsed_fraction
 
-# ---------- prompts (agreement-biased) ----------
+# -------------------- prompts --------------------
 
-def prompt_variants_p2(tsv_spec: str) -> Dict[str, str]:
-    # Agreement-forward but evidence-aware
+def prompt_variants(tsv_spec: str) -> Dict[str, str]:
+    # Evidence-first, stable framing; slight agree-lean only when plausible
     core = (
-        "You are an evidence-based lyric tag judge. Assume provided tags are reasonable defaults. "
-        "Set agree=Y unless the lyrics contradict or clearly fail to support the tag. "
-        "If support is weak but plausible, agree with low confidence (0.55–0.70). "
-        "If contradicted or unsupported, set agree=N. Be specific and concise in reasons. "
-        "Use only lyric evidence; do not rely on artist knowledge. "
+        "You are an evidence-based lyric tag judge. Decide using only the provided lyrics. "
+        "Agree (Y) when there is explicit or clearly plausible support; disagree (N) when contradicted or unsupported. "
+        "Use confidence to reflect strength of evidence. Be concise."
     )
     framing = (
         "For each candidate tag under each facet, output exactly one line in the order given, "
         "copying the tag text verbatim. " + tsv_spec
     )
-    v0 = core + framing
-    v1 = core + "When in doubt, prefer agree with low confidence; only use disagree if you can point to a specific absence or contradiction. " + framing
-    v2 = core + "Confidence guidance: explicit lyric support → 0.8–1.0; plausible/implicit → 0.55–0.70; weak/no support → 0.0–0.4. " + framing
+    v0 = core + " If in doubt, keep confidence low." + " " + framing
+    v1 = core + " Prefer agree with low confidence when support is plausible, not vibe-only." + " " + framing
+    v2 = core + " Confidence guide: explicit=0.8–1.0; plausible=0.55–0.70; weak/none=0–0.4." + " " + framing
     return {"V0_AgreeLean": v0, "V1_Compact": v1, "V2_ConfidenceGuided": v2}
 
-# ---------- LLM plumbing ----------
+# -------------------- LLM plumbing --------------------
 
 def ping_serverless_model(model: str) -> Tuple[bool, str, bool]:
     try:
@@ -277,42 +286,44 @@ def ping_serverless_model(model: str) -> Tuple[bool, str, bool]:
             return True, "stream-only", True
         return False, msg, False
 
-def build_serverless_llm_map(models: List[str]) -> Dict[str, LLM]:
-    prov = Table(show_header=True, header_style="bold cyan")
-    prov.add_column("Model")
-    prov.add_column("Status")
-    prov.add_column("Details")
-    llm_map: Dict[str, LLM] = {}
-    for requested in models:
-        canon = canonicalize_model_id(requested)
-        ok, detail, stream_only = ping_serverless_model(canon)
-        if ok and not stream_only:
-            llm_map[requested] = LLM(model=canon, deployment_type="serverless", api_key=FIREWORKS_API_KEY)
-            prov.add_row(requested, "[green]ready[/]", "-")
-        elif ok and stream_only:
-            prov.add_row(requested, "[yellow]ready (stream-only)[/]", detail or "-")
-        else:
-            prov.add_row(requested, "[red]unavailable[/]", detail or "-")
-    console.print(Panel(prov, title="Serverless Model Availability", expand=False))
-    return llm_map
+def build_serverless_llm(model_id: str) -> LLM:
+    canon = canonicalize_model_id(model_id)
+    ok, detail, stream_only = ping_serverless_model(canon)
+    t = Table(show_header=True, header_style="bold cyan")
+    t.add_column("Model"); t.add_column("Status"); t.add_column("Details")
+    if ok and not stream_only:
+        t.add_row(model_id, "[green]ready[/]", "-")
+        console.print(Panel(t, title="Serverless Model Availability", expand=False))
+        return LLM(model=canon, deployment_type="serverless", api_key=FIREWORKS_API_KEY)
+    elif ok and stream_only:
+        t.add_row(model_id, "[yellow]ready (stream-only)[/]", detail or "-")
+    else:
+        t.add_row(model_id, "[red]unavailable[/]", detail or "-")
+    console.print(Panel(t, title="Serverless Model Availability", expand=False))
+    raise RuntimeError(f"Model not available: {model_id} ({detail})")
 
-def build_user_payload(lyrics: str, candidate_tags: Dict[str, List[str]], tsv_spec: str) -> str:
-    return (
-        "CANDIDATES (use this exact order and exact spelling):\n" +
-        format_candidate_block(candidate_tags) +
-        "\n\nLYRICS:\n" + (lyrics or "") +
-        "\n\n" + tsv_spec
-    )
-
-def call_judge(llm: LLM, sys_prompt: str, lyrics: str, candidates: Dict[str, List[str]],
-               input_budget: int, output_budget: int, max_tokens: int, timeout: int,
-               tokenizer: Any, temperature: float, canonical: Dict[str, set], reason_chars: int,
-               tsv_spec: str, retries: int = 2):
+def call_judge(
+    llm: LLM,
+    sys_prompt: str,
+    lyrics: str,
+    candidates: Dict[str, List[str]],
+    input_budget: int,
+    output_budget: int,
+    max_tokens: int,
+    timeout: int,
+    tokenizer: Any,
+    temperature: float,
+    canonical: Dict[str, set],
+    reason_chars: int,
+    tsv_spec: str,
+    retries: int = 2
+):
     last_err = None
     last_raw = None
     for attempt in range(retries + 1):
         t0 = now_ms()
         candidate_json = format_candidate_block(candidates)
+        # budgeted truncation
         header = "CANDIDATES:\n" + candidate_json + "\n\nLYRICS:\n"
         chunks = (lyrics or "").splitlines()
         lo, hi = 0, len(chunks)
@@ -374,9 +385,9 @@ def call_judge(llm: LLM, sys_prompt: str, lyrics: str, candidates: Dict[str, Lis
             "hit_output_cap": False, "parsed_fraction": parsed_frac,
             "error": last_err or "unknown_error"}
 
-# ---------- metrics ----------
+# -------------------- metrics --------------------
 
-def eval_dev_outputs_p2(dev_results: List[Dict[str, Any]], candidates_map: Dict[str, Dict[str, List[str]]]):
+def eval_outputs(dev_results: List[Dict[str, Any]], candidates_map: Dict[str, Dict[str, List[str]]]):
     total = len(dev_results)
     ok = 0
     latencies = []
@@ -493,13 +504,48 @@ def eval_dev_outputs_p2(dev_results: List[Dict[str, Any]], candidates_map: Dict[
         "ok_tracks": ok
     }
 
-# ---------- orchestration ----------
+# -------------------- orchestration --------------------
 
-def run_config_on_dev_p2(dev_tracks: List[Dict[str, Any]], candidates_map: Dict[str, Dict[str, List[str]]],
-                         llm: LLM, sys_prompt: str, input_budget: int, output_budget: int,
-                         max_workers: int, timeout: int, max_tokens: int, tokenizer: Any,
-                         temperature: float, canonical: Dict[str, set], reason_chars: int, tsv_spec: str):
-    results = []
+def run_eval(
+    eval_tracks: List[Dict[str, Any]],
+    candidates_map: Dict[str, Dict[str, List[str]]],
+    llm: LLM,
+    sys_prompt: str,
+    input_budget: int,
+    output_budget: int,
+    max_workers: int,
+    timeout: int,
+    max_tokens: int,
+    tokenizer: Any,
+    temperature: float,
+    canonical: Dict[str, set],
+    reason_chars: int,
+    tsv_spec: str,
+    resume_from: Path = None
+):
+    # Resume support: load previous results and skip processed ids
+    previous: Dict[str, Dict[str, Any]] = {}
+    if resume_from and resume_from.exists():
+        try:
+            prev_list = json.loads(resume_from.read_text(encoding="utf-8"))
+            for item in prev_list:
+                if isinstance(item, dict) and "track_id" in item:
+                    previous[item["track_id"]] = item
+            console.print(Panel(f"Resuming: found {len(previous)} prior results in {resume_from}", title="Resume", expand=False))
+        except Exception as e:
+            console.print(Panel(f"Could not read resume file: {e}", title="Resume", expand=False))
+
+    todo = []
+    for t in eval_tracks:
+        tid = t.get("track_id")
+        if tid in previous:
+            continue
+        if tid in candidates_map:
+            todo.append(t)
+    console.print(Panel(f"To process: {len(todo)} (skipping {len(previous)} already done)", title="Worklist", expand=False))
+
+    results = list(previous.values())
+
     def one(tobj):
         tid = tobj.get("track_id")
         lyrics = tobj.get("lyrics") or ""
@@ -520,238 +566,147 @@ def run_config_on_dev_p2(dev_tracks: List[Dict[str, Any]], candidates_map: Dict[
             "hit_output_cap": r.get("hit_output_cap"),
             "parsed_fraction": r.get("parsed_fraction"),
         }
-    with ThreadPoolExecutor(max_workers=max_workers) as ex:
-        futs = [ex.submit(one, t) for t in dev_tracks]
-        for f in as_completed(futs):
-            results.append(f.result())
-    metrics = eval_dev_outputs_p2(results, {t.get("track_id"): candidates_map.get(t.get("track_id"), {}) for t in dev_tracks})
-    return results, metrics
 
-def save_json(path: Path, obj: Any):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
+    with Progress(SpinnerColumn(), TextColumn("[bold]LLM-as-a-Judge[/]: {task.description}"), BarColumn(), MofNCompleteColumn(), TextColumn("{task.percentage:>3.0f}%"), TimeElapsedColumn(), TimeRemainingColumn(), console=console) as progress:
+        task = progress.add_task("tracks", total=len(todo))
+        with ThreadPoolExecutor(max_workers=max_workers) as ex:
+            futs = [ex.submit(one, t) for t in todo]
+            for f in as_completed(futs):
+                results.append(f.result())
+                progress.update(task, advance=1)
 
-def rank_and_select_p2(results: List[Dict[str,Any]]):
-    def keyf(r):
-        m = r["metrics"]
-        json_ok = m.get("json_ok_rate", 0.0)
-        coverage = m.get("coverage_rate", 0.0)
-        agree_rate = m.get("agree_rate", 0.0)
-        target = 0.75  # lean toward agreement
-        agree_dist = abs(agree_rate - target)
-        p95 = m.get("latency_p95_s", None)
-        p95v = 1e9 if p95 is None else p95
-        toks = (m.get("input_tokens_avg") or 0.0) + (m.get("output_tokens_avg") or 0.0)
-        # Nudge against frequent cap hits & autofill
-        cap = m.get("cap_hit_fraction", 0.0)
-        autofill = m.get("autofill_rate_overall", 0.0)
-        return (-json_ok, -coverage, agree_dist, cap, autofill, p95v, toks)
-    ranked = sorted(results, key=keyf)
-    best_by_model = {}
-    for r in ranked:
-        m = r["model"]
-        if m not in best_by_model:
-            best_by_model[m] = r
-    return best_by_model, ranked
+    # Sort results by track_id for stability
+    results_sorted = sorted(results, key=lambda x: str(x.get("track_id", "")))
 
-def build_serverless_llm_map(models: List[str]) -> Dict[str, LLM]:
-    # duplicate name OK in this file
-    prov = Table(show_header=True, header_style="bold cyan")
-    prov.add_column("Model")
-    prov.add_column("Status")
-    prov.add_column("Details")
-    llm_map: Dict[str, LLM] = {}
-    for requested in models:
-        canon = canonicalize_model_id(requested)
-        ok, detail, stream_only = ping_serverless_model(canon)
-        if ok and not stream_only:
-            llm_map[requested] = LLM(model=canon, deployment_type="serverless", api_key=FIREWORKS_API_KEY)
-            prov.add_row(requested, "[green]ready[/]", "-")
-        elif ok and stream_only:
-            prov.add_row(requested, "[yellow]ready (stream-only)[/]", detail or "-")
-        else:
-            prov.add_row(requested, "[red]unavailable[/]", detail or "-")
-    console.print(Panel(prov, title="Serverless Model Availability", expand=False))
-    return llm_map
+    metrics = eval_outputs(results_sorted, {t.get("track_id"): candidates_map.get(t.get("track_id"), {}) for t in eval_tracks if t.get("track_id") in candidates_map})
+    return results_sorted, metrics
+
+# -------------------- main --------------------
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dev_path", type=str, default="analysis/llm_selection_p1/splits/dev.json")
+    # inputs
+    ap.add_argument("--eval_path", type=str, default="analysis/llm_selection_p1/splits/eval.json")
     ap.add_argument("--tags_jsonl", type=str, default="dataset/re_tagged/deepseek-v3p1/all_tracks.jsonl")
     ap.add_argument("--canonical_path", type=str, default="analysis/llm_tagging/all_tracks_unique_tags_cleaned_human_reviewed.json")
-    ap.add_argument("--models", type=str, nargs="+", default=["llama-v3p1-70b-instruct"])
-    ap.add_argument("--temps", type=float, nargs="+", default=[0.0, 0.2, 0.5])
-    # single-config controls
-    ap.add_argument("--single_config", action="store_true", help="Run exactly one model/variant/temp config")
-    ap.add_argument("--model_id", type=str, default="llama-v3p1-70b-instruct", help="Model id for --single_config")
-    ap.add_argument("--variant_name", type=str, default="V0_AgreeLean", help="Prompt variant key for --single_config")
-    ap.add_argument("--temp_value", type=float, default=0.5, help="Temperature for --single_config")
-    # sampling
-    ap.add_argument("--sample_n", type=int, default=0, help="If >0, evaluate only N tracks (sampled)")
-    ap.add_argument("--sample_seed", type=int, default=1337, help="Random seed for sampling")
+    # frozen config (defaults chosen for research-grade stability)
+    ap.add_argument("--model_id", type=str, default="llama-v3p1-70b-instruct")
+    ap.add_argument("--variant_name", type=str, default="V0_AgreeLean", choices=["V0_AgreeLean","V1_Compact","V2_ConfidenceGuided"])
+    ap.add_argument("--temperature", type=float, default=0.0)
+    ap.add_argument("--reason_chars", type=int, default=140)
+    ap.add_argument("--max_tokens", type=int, default=1024)
+    # runtime / budgets
     ap.add_argument("--max_workers", type=int, default=8)
     ap.add_argument("--input_token_budget", type=int, default=3500)
     ap.add_argument("--output_token_budget", type=int, default=512)
     ap.add_argument("--timeout_s", type=int, default=120)
-    ap.add_argument("--max_tokens", type=int, default=1024)
-    ap.add_argument("--reason_chars", type=int, default=140)
-    ap.add_argument("--outdir", type=str, default="analysis/llm_selection_p2")
+    # sampling & resume
+    ap.add_argument("--sample_n", type=int, default=0, help="If >0, run on a random subset for a smoke test")
+    ap.add_argument("--sample_seed", type=int, default=1337)
+    ap.add_argument("--resume", type=str, default="", help="Optional path to an existing eval_outputs.json to resume from")
+    # outputs
+    ap.add_argument("--outdir", type=str, default="analysis/llm_as_judge")
     args = ap.parse_args()
 
     tokenizer = try_load_tokenizer()
 
-    # Build dev and candidates
-    dev_tracks = load_dev_tracks(Path(args.dev_path))
+    # Load inputs
+    eval_tracks = load_tracks(Path(args.eval_path))
     all_tags_map = load_all_tags_jsonl(Path(args.tags_jsonl))
     canonical = load_canonical(Path(args.canonical_path))
 
-    present = [t for t in dev_tracks if t.get("track_id") in all_tags_map]
+    present = [t for t in eval_tracks if t.get("track_id") in all_tags_map]
     if args.sample_n and args.sample_n > 0:
         random.Random(args.sample_seed).shuffle(present)
         present = present[:args.sample_n]
 
-    missing = [t for t in dev_tracks if t.get("track_id") not in all_tags_map]
-    miss_ids = [t.get("track_id") for t in missing]
-
+    missing = [t for t in eval_tracks if t.get("track_id") not in all_tags_map]
     hdr = Table(show_header=True, header_style="bold blue")
-    hdr.add_column("Dev Tracks")
-    hdr.add_column("With Candidates (used)")
-    hdr.add_column("Missing Candidates")
-    hdr.add_row(str(len(dev_tracks)), str(len(present)), str(len(missing)))
+    hdr.add_column("Eval Tracks"); hdr.add_column("With Candidates (used)"); hdr.add_column("Missing Candidates")
+    hdr.add_row(str(len(eval_tracks)), str(len(present)), str(len(missing)))
     console.print(Panel(hdr, title="Input Coverage", expand=False))
-    if args.sample_n and args.sample_n > 0:
-        console.print(Panel(f"Sampling enabled: using N={len(present)} tracks (seed={args.sample_seed})", title="Sampling", expand=False))
     if missing:
-        console.print(Panel(("Missing track_ids: " + ", ".join(miss_ids[:10]) + (" ..." if len(miss_ids) > 10 else "")), title="Warning", expand=False))
-
+        miss_ids = [t.get("track_id") for t in missing[:20]]
+        console.print(Panel(("Missing track_ids (sample): " + ", ".join(miss_ids) + (" ..." if len(missing) > 20 else "")), title="Warning", expand=False))
     if present:
         bucket_counts = Counter(combo_key(t) for t in present)
-        console.print(Panel(str(bucket_counts.most_common(10)), title="Stratification Buckets (present only)", expand=False))
+        console.print(Panel(str(bucket_counts.most_common(10)), title="Stratification Buckets (used)", expand=False))
 
-    outdir = Path(args.outdir)
-    outdir.mkdir(parents=True, exist_ok=True)
-
-    # Build/validate models
-    want_models = [args.model_id] if args.single_config else args.models
-    llm_map = build_serverless_llm_map(want_models)
-    if not llm_map:
-        console.print("[red]No serverless models available. Exiting.[/]")
-        return
-
-    # Prompt variants, parameterized by reason length
+    # Build model and prompt
+    llm = build_serverless_llm(args.model_id)
     tsv_spec = make_tsv_spec(args.reason_chars)
-    variants = prompt_variants_p2(tsv_spec)
+    variants = prompt_variants(tsv_spec)
+    sys_prompt = variants[args.variant_name]
 
-    # Build configs
-    if args.single_config:
-        if args.variant_name not in variants:
-            raise ValueError(f"variant_name must be one of {list(variants.keys())}")
-        configs = [(args.model_id, args.variant_name, args.temp_value)]
-        console.print(Panel(f"Single-config mode: model={args.model_id}, variant={args.variant_name}, temp={args.temp_value}", title="Config", expand=False))
-    else:
-        configs = [(model, vname, temp) for model in llm_map.keys() for vname in variants for temp in args.temps]
+    # Out paths
+    outdir = Path(args.outdir) / safe_name(args.model_id) / safe_name(args.variant_name) / f"T_{str(args.temperature).replace('.','_')}"
+    outdir.mkdir(parents=True, exist_ok=True)
+    outputs_path = outdir / "eval_outputs.json"
+    metrics_path = outdir / "eval_metrics.json"
 
-    all_entries = []
-    with Progress(SpinnerColumn(), TextColumn("[bold]Judge Grid[/]: {task.description}"), BarColumn(), MofNCompleteColumn(), TextColumn("{task.percentage:>3.0f}%"), TimeElapsedColumn(), TimeRemainingColumn(), console=console) as progress:
-        task = progress.add_task("configs", total=len(configs))
-        for model, vname, temp in configs:
-            llm = llm_map[model]
-            sys_prompt = variants[vname]
-            results, metrics = run_config_on_dev_p2(
-                present,
-                all_tags_map,
-                llm,
-                sys_prompt,
-                args.input_token_budget,
-                args.output_token_budget,
-                args.max_workers,
-                args.timeout_s,
-                args.max_tokens,
-                tokenizer,
-                temp,
-                canonical,
-                reason_chars=args.reason_chars,
-                tsv_spec=tsv_spec
-            )
-            model_dir = outdir / safe_name(model) / safe_name(vname) / f"T_{str(temp).replace('.','_')}"
-            save_json(model_dir / "dev_outputs.json", results)
-            entry = {"model": model, "variant": vname, "temperature": temp, "metrics": metrics}
-            save_json(model_dir / "dev_metrics.json", entry)
-            all_entries.append(entry)
+    # Run
+    results, metrics = run_eval(
+        present,
+        all_tags_map,
+        llm,
+        sys_prompt,
+        args.input_token_budget,
+        args.output_token_budget,
+        args.max_workers,
+        args.timeout_s,
+        args.max_tokens,
+        tokenizer,
+        args.temperature,
+        canonical,
+        args.reason_chars,
+        tsv_spec,
+        resume_from=Path(args.resume) if args.resume else None
+    )
 
-            t = Table(show_header=True, header_style="bold magenta")
-            t.add_column("Model")
-            t.add_column("Variant")
-            t.add_column("Temp")
-            t.add_column("JSON OK")
-            t.add_column("Coverage")
-            t.add_column("AgreeRate")
-            t.add_column("Autofill%")
-            t.add_column("CapHit%")
-            t.add_column("p95(s)")
-            t.add_column("Tok In/Out")
-            t.add_row(
-                model,
-                vname,
-                str(temp),
-                f"{metrics['json_ok_rate']:.2f}",
-                f"{metrics['coverage_rate']:.2f}",
-                f"{metrics['agree_rate']:.2f}",
-                f"{metrics['autofill_rate_overall']*100:.1f}",
-                f"{metrics['cap_hit_fraction']*100:.1f}",
-                "-" if metrics["latency_p95_s"] is None else f"{metrics['latency_p95_s']:.3f}",
-                f"{'-' if metrics['input_tokens_avg'] is None else int(metrics['input_tokens_avg'])}/{ '-' if metrics['output_tokens_avg'] is None else int(metrics['output_tokens_avg'])}"
-            )
-            console.print(Panel(t, title="Completed Config", expand=False))
-            progress.update(task, advance=1)
+    # Save
+    save_json(outputs_path, results)
+    payload = {
+        "config": {
+            "model_id": args.model_id,
+            "variant_name": args.variant_name,
+            "temperature": args.temperature,
+            "reason_chars": args.reason_chars,
+            "max_tokens": args.max_tokens,
+            "input_token_budget": args.input_token_budget,
+            "output_token_budget": args.output_token_budget,
+            "timeout_s": args.timeout_s,
+        },
+        "paths": {
+            "eval_path": str(Path(args.eval_path)),
+            "tags_jsonl": str(Path(args.tags_jsonl)),
+            "canonical_path": str(Path(args.canonical_path)),
+            "outputs_path": str(outputs_path)
+        },
+        "metrics": metrics
+    }
+    save_json(metrics_path, payload)
 
-    summaries_root = outdir / "summaries"
-    summaries_root.mkdir(parents=True, exist_ok=True)
-    save_json(summaries_root / "grid_summary_p2.json", all_entries)
-
-    best_by_model, ranked = rank_and_select_p2(all_entries)
-    save_json(summaries_root / "llm_selection_results_p2.json", {"best_by_model": best_by_model, "ranked": ranked})
-
-    rt = Table(show_header=True, header_style="bold green")
-    rt.add_column("Rank")
-    rt.add_column("Model")
-    rt.add_column("Variant")
-    rt.add_column("Temp")
-    rt.add_column("JSON OK")
-    rt.add_column("Coverage")
-    rt.add_column("AgreeRate")
-    rt.add_column("Autofill%")
-    rt.add_column("CapHit%")
-    rt.add_column("p95(s)")
-    for i, r in enumerate(ranked[:12], start=1):
-        m = r["metrics"]
-        rt.add_row(
-            str(i),
-            r["model"],
-            r["variant"],
-            str(r["temperature"]),
-            f"{m['json_ok_rate']:.2f}",
-            f"{m['coverage_rate']:.2f}",
-            f"{m['agree_rate']:.2f}",
-            f"{m['autofill_rate_overall']*100:.1f}",
-            f"{m['cap_hit_fraction']*100:.1f}",
-            "-" if m['latency_p95_s'] is None else f"{m['latency_p95_s']:.3f}"
-        )
-    console.print(Panel(rt, title="Top Judge Configs (P2)", expand=False))
+    # Print summary
+    t = Table(show_header=True, header_style="bold green")
+    t.add_column("JSON OK"); t.add_column("Coverage"); t.add_column("AgreeRate")
+    t.add_column("Autofill%"); t.add_column("CapHit%"); t.add_column("p95(s)")
+    t.add_row(
+        f"{metrics['json_ok_rate']:.2f}",
+        f"{metrics['coverage_rate']:.2f}",
+        f"{metrics['agree_rate']:.2f}",
+        f"{metrics['autofill_rate_overall']*100:.1f}",
+        f"{metrics['cap_hit_fraction']*100:.1f}",
+        "-" if metrics["latency_p95_s"] is None else f"{metrics['latency_p95_s']:.3f}",
+    )
+    console.print(Panel(t, title="LLM-as-a-Judge — Eval Summary", expand=False))
 
     final = Table(show_header=False, box=None)
-    final.add_row("Dev Input", str(Path(args.dev_path)))
+    final.add_row("Eval Input", str(Path(args.eval_path)))
     final.add_row("Candidates JSONL", str(Path(args.tags_jsonl)))
     final.add_row("Canonical Tags", str(Path(args.canonical_path)))
     final.add_row("Output Dir", str(outdir))
-    final.add_row("Grid Summary", str(summaries_root / "grid_summary_p2.json"))
-    final.add_row("Selection File", str(summaries_root / "llm_selection_results_p2.json"))
-    final.add_row("Reason char limit", str(args.reason_chars))
-    final.add_row("Max tokens", str(args.max_tokens))
-    if args.single_config:
-        final.add_row("Mode", "Single-config")
-    if args.sample_n and args.sample_n > 0:
-        final.add_row("Sample", f"N={args.sample_n}, seed={args.sample_seed}")
+    final.add_row("Outputs", str(outputs_path))
+    final.add_row("Metrics", str(metrics_path))
     console.print(Panel(final, title="Done", expand=False))
 
 if __name__ == "__main__":

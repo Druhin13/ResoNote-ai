@@ -1,0 +1,43 @@
+{
+  "config": {
+    "model_id": "llama-v3p1-70b-instruct",
+    "variant_name": "V0_AgreeLean",
+    "temperature": 0.0,
+    "reason_chars": 140,
+    "max_tokens": 1024,
+    "input_token_budget": 3500,
+    "output_token_budget": 512,
+    "timeout_s": 120
+  },
+  "paths": {
+    "eval_path": "analysis/llm_selection_p1/splits/eval.json",
+    "tags_jsonl": "dataset/re_tagged/deepseek-v3p1/all_tracks.jsonl",
+    "canonical_path": "analysis/llm_tagging/all_tracks_unique_tags_cleaned_human_reviewed.json",
+    "outputs_path": "analysis/llm_as_judge/llama-v3p1-70b-instruct/V0_AgreeLean/T_0_0/eval_outputs.json"
+  },
+  "metrics": {
+    "json_ok_rate": 1.0,
+    "coverage_rate": 1.0,
+    "latency_p50_s": 3.896,
+    "latency_p95_s": 5.294,
+    "input_tokens_avg": 998.8,
+    "output_tokens_avg": 411.2,
+    "avg_agree_per_track": 12.46,
+    "avg_disagree_per_track": 2.765,
+    "agree_rate": 0.8184,
+    "agree_conf_avg": 0.802,
+    "disagree_conf_avg": 0.291,
+    "truncated_fraction": 0.0,
+    "cap_hit_fraction": 0.0,
+    "avg_parsed_fraction": 0.9994,
+    "autofill_rate_overall": 0.0007,
+    "autofill_rate_by_facet": {
+      "Emotional_Tone": 0.0,
+      "Thematic_Content": 0.0,
+      "Narrative_Structure": 0.0,
+      "Lyrical_Style": 0.0026
+    },
+    "total_tracks": 200,
+    "ok_tracks": 200
+  }
+}
