@@ -605,7 +605,7 @@ def main():
     ap.add_argument("--sample_seed", type=int, default=1337)
     ap.add_argument("--resume", type=str, default="", help="Optional path to an existing eval_outputs.json to resume from")
     # outputs
-    ap.add_argument("--outdir", type=str, default="analysis/llm_as_judge")
+    ap.add_argument("--outdir", type=str, default="analysis/llm_as_a_judge")
     args = ap.parse_args()
 
     tokenizer = try_load_tokenizer()

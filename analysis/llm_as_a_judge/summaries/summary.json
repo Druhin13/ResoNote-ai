@@ -1,0 +1,24 @@
+{
+  "n_items": 200,
+  "truncate_hits": 0,
+  "output_cap_hits": 0,
+  "overall_agree_rate": 0.8184,
+  "per_facet_agree_rate": {
+    "Emotional_Tone": 0.8342,
+    "Thematic_Content": 0.8192,
+    "Narrative_Structure": 0.7698,
+    "Lyrical_Style": 0.8464
+  },
+  "per_facet_autofill_rate": {
+    "Emotional_Tone": 0.0,
+    "Thematic_Content": 0.0,
+    "Narrative_Structure": 0.0,
+    "Lyrical_Style": 0.0026
+  },
+  "conf_agree_mean": 0.8022,
+  "conf_disagree_mean": 0.2913,
+  "latency_p50": 3.895,
+  "latency_p95": 5.294,
+  "tokens_avg_in": 998.8,
+  "tokens_avg_out": 411.2
+}

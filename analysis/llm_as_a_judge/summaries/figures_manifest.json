@@ -1,0 +1,24 @@
+{
+  "assets": [
+    "assets/01_agree_rate_hist.png",
+    "assets/02_per_facet_agree_rate.png",
+    "assets/03_confidence_separation.png",
+    "assets/04_confidence_by_label_Emotional_Tone.png",
+    "assets/04_confidence_by_label_Thematic_Content.png",
+    "assets/04_confidence_by_label_Narrative_Structure.png",
+    "assets/04_confidence_by_label_Lyrical_Style.png",
+    "assets/05_autofill_rate_by_facet.png",
+    "assets/06_suggestion_unique_counts_by_facet.png",
+    "assets/08_reason_length_hist.png",
+    "assets/09_latency_hist.png",
+    "assets/10_tokens_scatter.png",
+    "assets/11_top_accepted_tags_Emotional_Tone.png",
+    "assets/12_most_rejected_tags_Emotional_Tone.png",
+    "assets/11_top_accepted_tags_Thematic_Content.png",
+    "assets/12_most_rejected_tags_Thematic_Content.png",
+    "assets/11_top_accepted_tags_Narrative_Structure.png",
+    "assets/12_most_rejected_tags_Narrative_Structure.png",
+    "assets/11_top_accepted_tags_Lyrical_Style.png",
+    "assets/12_most_rejected_tags_Lyrical_Style.png"
+  ]
+}

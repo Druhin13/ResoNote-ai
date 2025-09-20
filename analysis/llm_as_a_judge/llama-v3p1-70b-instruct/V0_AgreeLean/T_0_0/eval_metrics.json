@@ -13,7 +13,7 @@
     "eval_path": "analysis/llm_selection_p1/splits/eval.json",
     "tags_jsonl": "dataset/re_tagged/deepseek-v3p1/all_tracks.jsonl",
     "canonical_path": "analysis/llm_tagging/all_tracks_unique_tags_cleaned_human_reviewed.json",
-    "outputs_path": "analysis/llm_as_judge/llama-v3p1-70b-instruct/V0_AgreeLean/T_0_0/eval_outputs.json"
+    "outputs_path": "analysis/llm_as_a_judge/llama-v3p1-70b-instruct/V0_AgreeLean/T_0_0/eval_outputs.json"
   },
   "metrics": {
     "json_ok_rate": 1.0,
